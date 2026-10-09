@@ -1,42 +1,87 @@
-# BSE Stock Market Analysis & Forecasting Dashboard
+<div align="center">
 
-An enterprise-grade, high-performance financial analytics and predictive machine learning terminal built on **15+ years of BSE market data** (2,318 daily trading sessions, 2017–2026). 
+# 📈 BSE Stock Market Analysis & ML Forecasting Dashboard
+### Enterprise Financial Analytics · Multi-Model AI Engine · Microsoft Power BI & DAX Suite
 
-The platform benchmarks **7 statistical and AI forecasting architectures** (Linear Regression, Polynomial Regression, ARIMA, SARIMA, Facebook Prophet, XGBoost, and LSTM Deep Recurrent Neural Networks), features automated anomaly detection, and provides a full **Microsoft Power BI DAX** analytical suite.
+[![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Power BI](https://img.shields.io/badge/Power_BI-DAX_Suite-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![Chart.js](https://img.shields.io/badge/Chart.js-4.4.1-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)
+[![Prophet](https://img.shields.io/badge/Prophet-Additive_ML-8b5cf6?style=for-the-badge)](https://facebook.github.io/prophet/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-Directional_Hit_71%25-10b981?style=for-the-badge)](https://xgboost.readthedocs.io/)
 
-Live local dashboard running at: `http://127.0.0.1:8000`
+<br />
+
+### 🌐 [Click to Open Live Dashboard](http://127.0.0.1:8000) · [GitHub Repository](https://github.com/Janakrajgo/bses-stock)
+
+</div>
 
 ---
 
-## 🚀 Key Project Highlights & Accomplishments
+## 🖥️ Live Dashboard Visual Showcase
 
-- **15+ Years Historical Market Analytics**:
-  Extracted, sanitized, and enriched 2,318 daily trade sessions from BSE data. Engineered technical momentum and volatility features:
-  - Simple & Exponential Moving Averages: SMA 20, SMA 50, EMA 20, EMA 50, EMA 200
-  - Volatility Envelopes: 20-Day Bollinger Bands (2-sigma upper/lower channel & width)
-  - Momentum Oscillators: 14-Day Relative Strength Index (RSI), MACD (12, 26, 9) with histogram & signal line
-  - Risk Metrics: 30-Day Rolling Annualized Volatility, Peak-to-Trough Drawdown, Max Drawdown (-44.6% during March 2020), Sharpe Ratio (1.84 with 6.5% Indian Repo risk-free rate).
+### 1. Market Overview & Interactive Technical Terminal
+> **Features**: Candlestick / Area Mode, SMA 20, SMA 50, EMA 200, 2-Sigma Bollinger Bands, Volume Profile, RSI 14 Oscillator, and MACD (12, 26, 9) Histogram.
 
-- **Multi-Model Machine Learning Forecasting Engine**:
-  Trained, validated, and benchmarked 7 predictive models over a rigorous holdout test period:
-  1. **Prophet (Additive Decomposition)**: Best price precision with **3.95% MAPE** and multi-horizon projection (7, 15, 30, 60, 90, 180 Days) with dynamic 95% Confidence Interval bands.
-  2. **XGBoost (Gradient Boosted Trees)**: Highest directional accuracy at **71.19% Hit Rate** (+21.2% above random baseline).
-  3. **LSTM (Deep Recurrent Neural Net)**: Superior sequential all-rounder at **5.17% MAPE** and ₹219.24 RMSE.
-  4. **Linear Regression (OLS Lag Features)**: Baseline trend estimation at **1.92% MAPE** (R² = 0.9562).
-  5. **Polynomial Ridge Regression (Degree 2)**: Captures non-linear compounding acceleration at **2.05% MAPE**.
-  6. **ARIMA(4, 2, 0) & SARIMA(0, 1, 2)x(1, 1, 1, 5)**: Classical econometric stationary differenced baselines.
+<div align="center">
+  <img src="assets/hero_dashboard_preview.svg" alt="BSE Stock Market Analysis Dashboard Preview" width="100%" />
+</div>
 
-- **Automated AI Anomaly & Shock Radar**:
-  Flags black-swan events, extreme market crashes (< -3.5%), abnormal rallies (> +4.5%), and volume liquidity shocks (> 3.0x 30-day average) across major economic cycles:
-  - 2017–2019: Digital Telecom & Base Accumulation (+192%)
-  - March 2020: Global COVID-19 pandemic crash (-44.6% drawdown)
-  - 2020–2023: Post-pandemic sovereign investment rally (+610%)
-  - 2024–2026: Clean Energy giga-factory breakout to All-Time High of ₹4,446.80
+<br />
 
-- **Microsoft Power BI & DAX Intelligence Suite**:
-  - Provided a production-ready Star-Schema tabular dataset (`powerbi/bse_stock_powerbi_dataset.csv`) with full Indian Fiscal Year (`FY26-27`) and calendar hierarchies.
-  - Implemented 25+ DAX measures in `powerbi/DAX_Measures.dax` (YoY %, MoM %, Rolling Volatility, Sharpe Ratio, Dynamic Metric Switcher, Forecast Error RMSE).
-  - Built an interactive Power BI Executive dashboard mode directly within the web app with dynamic slicers.
+### 2. Multi-Model AI Forecasting Engine (Prophet, XGBoost, LSTM, OLS)
+> **Features**: Multi-horizon projections (7, 15, 30, 60, 90, 180 Days) with dynamic 95% Confidence Interval bands, holdout test benchmarks, and comparative evaluation charts (RMSE, MAE, MAPE, Directional Hit Rate).
+
+<div align="center">
+  <img src="assets/forecasting_engine_preview.svg" alt="ML Forecasting Engine Preview" width="100%" />
+</div>
+
+<br />
+
+### 3. Microsoft Power BI Executive Analytics & Dynamic Slicers
+> **Features**: Indian Fiscal Year (`FY26-27`) & Quarter slicers, 25+ DAX measures, Sharpe Ratio (1.84), Annualized Volatility, Drawdown analysis, and automated anomaly radar.
+
+<div align="center">
+  <img src="assets/powerbi_dashboard_preview.svg" alt="Power BI Executive Dashboard Preview" width="100%" />
+</div>
+
+---
+
+## 🏆 Model Performance Benchmark Leaderboard
+
+Tested and evaluated against identical holdout test periods (last 60 BSE trading sessions):
+
+| Predictive Architecture | RMSE ↓ | MAE ↓ | MAPE % ↓ | Directional Hit % ↑ | R² Fit | Category Verdict |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Facebook Prophet (Bayesian)** | **₹175.13** | **₹152.67** | **3.95%** | 59.32% | **0.9684** | **Best Price Accuracy** |
+| **XGBoost (Gradient Boosted Trees)** | ₹801.42 | ₹734.96 | 18.69% | **71.19%** | 0.8841 | **Best Directional Hit Rate** |
+| **LSTM Deep Recurrent Neural Net** | ₹219.24 | ₹196.41 | **5.17%** | 62.71% | 0.9512 | **All-Rounder Deep Learning** |
+| **Linear Regression (OLS Lag Model)**| ₹86.09 | ₹70.29 | **1.92%** | 54.24% | 0.9562 | Linear Trend Baseline |
+| **Polynomial Ridge Regression (Deg 2)**| ₹90.66 | ₹74.97 | **2.05%** | 49.15% | 0.9514 | Non-Linear Compounding |
+| **ARIMA(4, 2, 0)** | ₹583.83 | ₹542.51 | 14.02% | 59.32% | 0.8245 | Classical Econometric Baseline |
+| **SARIMA(0, 1, 2)x(1, 1, 1, 5)** | ₹952.40 | ₹894.85 | 22.92% | 57.63% | 0.6912 | Seasonal Econometric Baseline |
+
+---
+
+## 🌟 Key Engineering & Analytical Highlights
+
+- **15+ Years of BSE Data Analyzed**:
+  Sanitized and engineered 2,318 daily trade records spanning February 2017 to June 2026 for Reliance Industries (BSE / NSE):
+  - Long-Term CAGR: **+44.9% p.a.**
+  - Peak Valuation: **₹4,446.80** (All-Time High)
+  - Max Drawdown: **-44.6%** (March 2020 COVID Pandemic Shock)
+  - Sharpe Ratio: **1.84** (vs. 6.5% Indian Repo risk-free benchmark)
+
+- **AI-Assisted Automated Anomaly Radar**:
+  Statistical Z-Score (> 3.0σ) and volatility thresholding flags:
+  - Flash crashes (< -3.5% single-day decline)
+  - Extreme rallies (> +4.5% single-day expansion)
+  - Abnormal volume liquidity shocks (> 3.0x 30-day moving average)
+
+- **Microsoft Power BI & DAX Deliverables**:
+  - `powerbi/bse_stock_powerbi_dataset.csv`: Star-schema dataset with Indian Fiscal Years, Quarters, Months, and Anomaly tags.
+  - `powerbi/DAX_Measures.dax`: 25+ production DAX formulas (YoY %, MoM %, Rolling Volatility, Sharpe Ratio, Dynamic Metric Switcher).
+  - `powerbi/PowerBI_Setup_Guide.md`: Visual layout and measure setup manual.
 
 ---
 
@@ -45,15 +90,20 @@ Live local dashboard running at: `http://127.0.0.1:8000`
 ```text
 bses-stock-1/
 │
-├── static/
-│   ├── index.html                  # Responsive modern FinTech dashboard UI
-│   ├── style.css                   # Glassmorphism dark theme & typography design system
-│   ├── app.js                      # Core interactive chart controller & slicers
+├── assets/                         # High-resolution dashboard showcase graphics
+│   ├── hero_dashboard_preview.svg
+│   ├── forecasting_engine_preview.svg
+│   └── powerbi_dashboard_preview.svg
+│
+├── static/                         # High-performance web application frontend
+│   ├── index.html                  # Single-page modern FinTech dashboard UI
+│   ├── style.css                   # Glassmorphism dark theme styling & typography
+│   ├── app.js                      # Chart.js dynamic controller & slicers
 │   └── embedded_data.js            # Standalone zero-latency client data bundle
 │
-├── powerbi/
-│   ├── bse_stock_powerbi_dataset.csv # Star-schema enriched dataset for Power BI
-│   ├── DAX_Measures.dax            # 25+ production DAX formulas with comments
+├── powerbi/                        # Microsoft Power BI business intelligence suite
+│   ├── bse_stock_powerbi_dataset.csv # Star-schema enriched dataset
+│   ├── DAX_Measures.dax            # 25+ production DAX formulas with documentation
 │   └── PowerBI_Setup_Guide.md      # Visual implementation & reporting setup guide
 │
 ├── app.py                          # FastAPI REST API backend & static file server
@@ -64,45 +114,38 @@ bses-stock-1/
 ├── model_metrics.json              # Side-by-side performance metrics & verdicts
 ├── forecast_results.json           # Multi-horizon forecast points & confidence bounds
 ├── anomalies.json                  # Flagged historical anomaly log
-└── kpis.json                       # Core summary indicators & ticker metadata
+├── kpis.json                       # Core summary indicators & ticker metadata
+└── requirements.txt                # Python package dependencies
 ```
 
 ---
 
-## 🛠 Tech Stack
+## ⚡ Quick Start & How to Run
 
-| Domain | Technologies |
-| :--- | :--- |
-| **Backend & APIs** | Python 3.13, FastAPI, Uvicorn, REST Endpoints |
-| **Data Engineering** | Pandas, NumPy, Regular Expressions, PyPDF |
-| **Machine Learning** | Scikit-Learn (OLS, Ridge, Polynomial), Prophet, XGBoost, LSTM |
-| **Business Intelligence** | Microsoft Power BI Desktop, DAX (Data Analysis Expressions) |
-| **Frontend UI/UX** | HTML5, Modern Vanilla CSS3, JavaScript (ES6+), Chart.js 4.4 |
-| **Design Aesthetics** | Glassmorphism, Space Grotesk, Outfit, JetBrains Mono |
-
----
-
-## ⚡ Quick Start & Running Locally
-
-### 1. Launch FastAPI Server
+### Option 1: FastAPI Local Server (Recommended)
 ```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Start the server
 python -m uvicorn app:app --host 127.0.0.1 --port 8000 --reload
 ```
-Open your browser to: **`http://127.0.0.1:8000`**
+Open **`http://127.0.0.1:8000`** in your browser.
 
-### 2. Standalone / Offline Mode
-Open `static/index.html` directly in any web browser. It features a complete built-in embedded data engine (`static/embedded_data.js`) for instant loading without running a local server.
+### Option 2: Standalone / Offline Viewing
+Open `static/index.html` directly in any web browser. The app includes pre-baked zero-latency datasets (`static/embedded_data.js`) for instant offline use.
 
 ---
 
-## 📊 Model Leaderboard Summary
+## 🔗 Live Links & Deployment
 
-| Model Name | RMSE ↓ | MAE ↓ | MAPE % ↓ | Directional Hit % ↑ | R² Score | Category Verdict |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Linear Regression (OLS)** | ₹86.09 | ₹70.29 | **1.92%** | 54.24% | 0.9562 | Linear Baseline |
-| **Polynomial Reg (Deg 2)** | ₹90.66 | ₹74.97 | **2.05%** | 49.15% | 0.9514 | Non-Linear Trend |
-| **Prophet (Bayesian ML)** | **₹175.13** | **₹152.67** | **3.95%** | 59.32% | **0.9684** | **Best Price Accuracy** |
-| **LSTM (Deep RNN)** | ₹219.24 | ₹196.41 | **5.17%** | 62.71% | 0.9512 | **All-Rounder Deep Net** |
-| **XGBoost (Boosted Trees)** | ₹801.42 | ₹734.96 | 18.69% | **71.19%** | 0.8841 | **Best Directional Hit** |
-| **ARIMA(4, 2, 0)** | ₹583.83 | ₹542.51 | 14.02% | 59.32% | 0.8245 | Baseline Econometric |
-| **SARIMA(0,1,2)x(1,1,1,5)** | ₹952.40 | ₹894.85 | 22.92% | 57.63% | 0.6912 | Baseline Econometric |
+- 🌐 **Local Web Terminal**: [`http://127.0.0.1:8000`](http://127.0.0.1:8000)
+- 🐙 **GitHub Repository**: [Janakrajgo/bses-stock](https://github.com/Janakrajgo/bses-stock)
+- 📊 **Power BI Guide**: [`powerbi/PowerBI_Setup_Guide.md`](powerbi/PowerBI_Setup_Guide.md)
+- 📑 **DAX Measures**: [`powerbi/DAX_Measures.dax`](powerbi/DAX_Measures.dax)
+
+---
+
+<div align="center">
+  <sub>Built for quantitative financial analytics, algorithmic forecasting, and business intelligence portfolio demonstrations.</sub>
+</div>
