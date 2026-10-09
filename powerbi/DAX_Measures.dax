@@ -1,0 +1,248 @@
+// ===============================================================================
+// BSE STOCK MARKET ANALYSIS & FORECASTING DASHBOARD
+// COMPLETE DAX MEASURES LIBRARY (Power BI Desktop / Tabular Model)
+// Ticker: RELIANCE.NS / BSE Stock Market
+// ===============================================================================
+
+// -------------------------------------------------------------------------------
+// 1. CORE PRICE & VALUATION MEASURES
+// -------------------------------------------------------------------------------
+
+// [Latest Close Price]
+Latest Close Price = 
+VAR MaxDate = MAX('BSE_Stock_Data'[Date])
+RETURN
+    CALCULATE(
+        MAX('BSE_Stock_Data'[Close_Price]),
+        'BSE_Stock_Data'[Date] = MaxDate
+    )
+
+// [Previous Day Price]
+Previous Day Price = 
+VAR MaxDate = MAX('BSE_Stock_Data'[Date])
+VAR PrevDate = 
+    CALCULATE(
+        MAX('BSE_Stock_Data'[Date]),
+        'BSE_Stock_Data'[Date] < MaxDate
+    )
+RETURN
+    CALCULATE(
+        MAX('BSE_Stock_Data'[Close_Price]),
+        'BSE_Stock_Data'[Date] = PrevDate
+    )
+
+// [Daily Price Change (INR)]
+Daily Price Change = 
+[Latest Close Price] - [Previous Day Price]
+
+// [Daily Price Change %]
+Daily Price Change % = 
+DIVIDE([Daily Price Change], [Previous Day Price], 0)
+
+// [52-Week High]
+52W High = 
+VAR MaxDate = MAX('BSE_Stock_Data'[Date])
+VAR Start52W = MaxDate - 365
+RETURN
+    CALCULATE(
+        MAX('BSE_Stock_Data'[High_Price]),
+        'BSE_Stock_Data'[Date] >= Start52W,
+        'BSE_Stock_Data'[Date] <= MaxDate
+    )
+
+// [52-Week Low]
+52W Low = 
+VAR MaxDate = MAX('BSE_Stock_Data'[Date])
+VAR Start52W = MaxDate - 365
+RETURN
+    CALCULATE(
+        MIN('BSE_Stock_Data'[Low_Price]),
+        'BSE_Stock_Data'[Date] >= Start52W,
+        'BSE_Stock_Data'[Date] <= MaxDate
+    )
+
+// [All-Time High (ATH)]
+All Time High = 
+CALCULATE(
+    MAX('BSE_Stock_Data'[High_Price]),
+    ALL('BSE_Stock_Data')
+)
+
+// [Distance from 52W High %]
+Distance from 52W High % = 
+DIVIDE([Latest Close Price] - [52W High], [52W High], 0)
+
+// -------------------------------------------------------------------------------
+// 2. TIME-INTELLIGENCE & MULTI-YEAR TREND MEASURES
+// -------------------------------------------------------------------------------
+
+// [Month-over-Month (MoM) Return %]
+Price MoM % = 
+VAR CurrentClose = [Latest Close Price]
+VAR PrevMonthClose = 
+    CALCULATE(
+        [Latest Close Price],
+        DATEADD('BSE_Stock_Data'[Date], -1, MONTH)
+    )
+RETURN
+    DIVIDE(CurrentClose - PrevMonthClose, PrevMonthClose, 0)
+
+// [Year-over-Year (YoY) Return %]
+Price YoY % = 
+VAR CurrentClose = [Latest Close Price]
+VAR PrevYearClose = 
+    CALCULATE(
+        [Latest Close Price],
+        SAMEPERIODLASTYEAR('BSE_Stock_Data'[Date])
+    )
+RETURN
+    DIVIDE(CurrentClose - PrevYearClose, PrevYearClose, 0)
+
+// [Calendar Year-to-Date (YTD) Return %]
+Price YTD % = 
+VAR CurrentClose = [Latest Close Price]
+VAR CurrentYear = YEAR(MAX('BSE_Stock_Data'[Date]))
+VAR FirstCloseOfYear = 
+    CALCULATE(
+        FIRSTNONBLANKVALUE('BSE_Stock_Data'[Date], MAX('BSE_Stock_Data'[Close_Price])),
+        FILTER(ALL('BSE_Stock_Data'), YEAR('BSE_Stock_Data'[Date]) = CurrentYear)
+    )
+RETURN
+    DIVIDE(CurrentClose - FirstCloseOfYear, FirstCloseOfYear, 0)
+
+// [Compound Annual Growth Rate (CAGR) %]
+Long Term CAGR % = 
+VAR FirstDate = MIN('BSE_Stock_Data'[Date])
+VAR LastDate = MAX('BSE_Stock_Data'[Date])
+VAR InitialPrice = CALCULATE(MIN('BSE_Stock_Data'[Close_Price]), 'BSE_Stock_Data'[Date] = FirstDate)
+VAR FinalPrice = CALCULATE(MAX('BSE_Stock_Data'[Close_Price]), 'BSE_Stock_Data'[Date] = LastDate)
+VAR NumYears = DIVIDE(DATEDIFF(FirstDate, LastDate, DAY), 365.25, 1)
+RETURN
+    IF(
+        NumYears > 0 && InitialPrice > 0,
+        ( (FinalPrice / InitialPrice) ^ (1 / NumYears) ) - 1,
+        BLANK()
+    )
+
+// -------------------------------------------------------------------------------
+// 3. TECHNICAL INDICATORS & RISK MEASURES
+// -------------------------------------------------------------------------------
+
+// [20-Day Simple Moving Average]
+DAX SMA 20 = 
+AVERAGEX(
+    DATESINPERIOD('BSE_Stock_Data'[Date], MAX('BSE_Stock_Data'[Date]), -20, DAY),
+    CALCULATE(AVERAGE('BSE_Stock_Data'[Close_Price]))
+)
+
+// [50-Day Simple Moving Average]
+DAX SMA 50 = 
+AVERAGEX(
+    DATESINPERIOD('BSE_Stock_Data'[Date], MAX('BSE_Stock_Data'[Date]), -50, DAY),
+    CALCULATE(AVERAGE('BSE_Stock_Data'[Close_Price]))
+)
+
+// [Golden Cross Signal Indicator]
+Golden Cross Signal = 
+IF([DAX SMA 20] > [DAX SMA 50], "Bullish (SMA20 > SMA50)", "Bearish (SMA20 < SMA50)")
+
+// [Annualized Volatility (30-Day)]
+Annualized Volatility 30D = 
+VAR DailyStd = 
+    STDEVX.S(
+        DATESINPERIOD('BSE_Stock_Data'[Date], MAX('BSE_Stock_Data'[Date]), -30, DAY),
+        CALCULATE(SUM('BSE_Stock_Data'[Daily_Return_Pct]))
+    )
+RETURN
+    DailyStd * SQRT(252)
+
+// [Maximum Historical Drawdown %]
+Max Drawdown % = 
+MIN('BSE_Stock_Data'[Drawdown_Pct])
+
+// [Sharpe Ratio (Assuming Risk-Free Rate = 6.5% Indian Repo)]
+Sharpe Ratio = 
+VAR RiskFreeRateDaily = 0.065 / 252
+VAR AvgDailyReturn = AVERAGE('BSE_Stock_Data'[Daily_Return_Pct])
+VAR DailyStd = STDEV.S('BSE_Stock_Data'[Daily_Return_Pct])
+RETURN
+    DIVIDE((AvgDailyReturn - RiskFreeRateDaily) * SQRT(252), DailyStd * SQRT(252), 0)
+
+// -------------------------------------------------------------------------------
+// 4. ANOMALY DETECTION & SURGE METRICS
+// -------------------------------------------------------------------------------
+
+// [Total Flagged Anomalies Count]
+Total Anomalies Count = 
+CALCULATE(
+    COUNTROWS('BSE_Stock_Data'),
+    'BSE_Stock_Data'[IsAnomaly] = 1
+)
+
+// [Crash Days Count (Daily Return < -3.5%)]
+Crash Days Count = 
+CALCULATE(
+    COUNTROWS('BSE_Stock_Data'),
+    'BSE_Stock_Data'[Daily_Return_Pct] < -0.035
+)
+
+// [Rally Days Count (Daily Return > +4.5%)]
+Rally Days Count = 
+CALCULATE(
+    COUNTROWS('BSE_Stock_Data'),
+    'BSE_Stock_Data'[Daily_Return_Pct] > 0.045
+)
+
+// [Average Daily Volume]
+Average Daily Volume = 
+AVERAGE('BSE_Stock_Data'[Volume])
+
+// [Volume Spike Factor]
+Volume Spike Ratio = 
+VAR CurrVol = SUM('BSE_Stock_Data'[Volume])
+VAR AvgVol = [Average Daily Volume]
+RETURN
+    DIVIDE(CurrVol, AvgVol, 1)
+
+// -------------------------------------------------------------------------------
+// 5. FORECAST TRACKING & PREDICTION ERROR METRICS
+// -------------------------------------------------------------------------------
+
+// [XGBoost Forecast Error (INR)]
+XGBoost Absolute Error = 
+AVERAGEX(
+    FILTER('BSE_Stock_Data', NOT(ISBLANK('BSE_Stock_Data'[Forecast_XGBoost]))),
+    ABS('BSE_Stock_Data'[Close_Price] - 'BSE_Stock_Data'[Forecast_XGBoost])
+)
+
+// [XGBoost MAPE %]
+XGBoost MAPE % = 
+AVERAGEX(
+    FILTER('BSE_Stock_Data', NOT(ISBLANK('BSE_Stock_Data'[Forecast_XGBoost]))),
+    DIVIDE(ABS('BSE_Stock_Data'[Close_Price] - 'BSE_Stock_Data'[Forecast_XGBoost]), 'BSE_Stock_Data'[Close_Price], 0)
+) * 100
+
+// [LSTM Absolute Error]
+LSTM Absolute Error = 
+AVERAGEX(
+    FILTER('BSE_Stock_Data', NOT(ISBLANK('BSE_Stock_Data'[Forecast_LSTM]))),
+    ABS('BSE_Stock_Data'[Close_Price] - 'BSE_Stock_Data'[Forecast_LSTM])
+)
+
+// -------------------------------------------------------------------------------
+// 6. DYNAMIC SLICER / PARAMETER SWITCH MEASURE
+// -------------------------------------------------------------------------------
+// Create a disconnected table 'Metric_Selection' with column [Metric]:
+// Rows: "Closing Price", "SMA 20", "SMA 50", "Daily Return %", "Volume"
+Selected Dynamic Metric = 
+VAR SelectedOption = SELECTEDVALUE('Metric_Selection'[Metric], "Closing Price")
+RETURN
+    SWITCH(
+        SelectedOption,
+        "Closing Price", [Latest Close Price],
+        "SMA 20", [DAX SMA 20],
+        "SMA 50", [DAX SMA 50],
+        "Daily Return %", AVERAGE('BSE_Stock_Data'[Daily_Return_Pct]),
+        "Volume", SUM('BSE_Stock_Data'[Volume]),
+        [Latest Close Price]
+    )

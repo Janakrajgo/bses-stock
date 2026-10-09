@@ -1,0 +1,72 @@
+[
+  {
+    "Model": "Linear Regression",
+    "RMSE": 86.09,
+    "MAE": 70.29,
+    "MAPE": 1.92,
+    "Directional_Acc": 54.24,
+    "R2_Score": 0.9562,
+    "Verdict": "Linear Baseline",
+    "BadgeClass": "v-blue"
+  },
+  {
+    "Model": "Polynomial Reg (Deg 2)",
+    "RMSE": 90.66,
+    "MAE": 74.97,
+    "MAPE": 2.05,
+    "Directional_Acc": 49.15,
+    "R2_Score": 0.9514,
+    "Verdict": "Non-Linear Trend",
+    "BadgeClass": "v-purple"
+  },
+  {
+    "Model": "ARIMA(4, 2, 0)",
+    "RMSE": 583.83,
+    "MAE": 542.51,
+    "MAPE": 14.02,
+    "Directional_Acc": 59.32,
+    "R2_Score": 0.8245,
+    "Verdict": "Baseline",
+    "BadgeClass": "v-gray"
+  },
+  {
+    "Model": "SARIMA(0, 1, 2)x(1, 1, 1, 5)",
+    "RMSE": 952.4,
+    "MAE": 894.85,
+    "MAPE": 22.92,
+    "Directional_Acc": 57.63,
+    "R2_Score": 0.6912,
+    "Verdict": "Baseline",
+    "BadgeClass": "v-gray"
+  },
+  {
+    "Model": "Prophet",
+    "RMSE": 175.13,
+    "MAE": 152.67,
+    "MAPE": 3.95,
+    "Directional_Acc": 59.32,
+    "R2_Score": 0.9684,
+    "Verdict": "Best Price",
+    "BadgeClass": "v-green"
+  },
+  {
+    "Model": "XGBoost",
+    "RMSE": 801.42,
+    "MAE": 734.96,
+    "MAPE": 18.69,
+    "Directional_Acc": 71.19,
+    "R2_Score": 0.8841,
+    "Verdict": "Best Direction",
+    "BadgeClass": "v-blue"
+  },
+  {
+    "Model": "LSTM",
+    "RMSE": 219.24,
+    "MAE": 196.41,
+    "MAPE": 5.17,
+    "Directional_Acc": 62.71,
+    "R2_Score": 0.9512,
+    "Verdict": "All-Rounder",
+    "BadgeClass": "v-purple"
+  }
+]

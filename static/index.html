@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSE Stock Market Analysis & ML Forecasting Terminal</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js & Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+
+    <!-- Embedded Data fallback (for offline & instant load) -->
+    <script src="/static/embedded_data.js"></script>
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+    <!-- ======================================================== -->
+    <!-- 1. TOP TICKER RIBBON & SYSTEM BANNER                     -->
+    <!-- ======================================================== -->
+    <header class="top-banner">
+        <div class="banner-inner">
+            <div class="brand-group">
+                <div class="brand-logo-glow">
+                    <span class="brand-icon">📈</span>
+                </div>
+                <div class="brand-text">
+                    <div class="brand-title-wrap">
+                        <span class="brand-name">BSE <span class="gradient-text">MarketPulse</span></span>
+                        <span class="live-pill"><span class="pulse-dot"></span> LIVE DATA FEED</span>
+                    </div>
+                    <span class="brand-sub">Enterprise Stock Analysis, ML Forecasting & Power BI Intelligence</span>
+                </div>
+            </div>
+
+            <!-- Ticker summary metrics -->
+            <div class="ticker-stats-bar">
+                <div class="ticker-stat">
+                    <span class="ts-label">TICKER</span>
+                    <span class="ts-val ticker-badge">RELIANCE.NS (BSE)</span>
+                </div>
+                <div class="ticker-stat">
+                    <span class="ts-label">LAST CLOSE</span>
+                    <span class="ts-val mono text-white" id="navLastClose">₹3,872.10</span>
+                </div>
+                <div class="ticker-stat">
+                    <span class="ts-label">24H CHANGE</span>
+                    <span class="ts-val mono text-down" id="navChange">▼ ₹14.50 (-0.37%)</span>
+                </div>
+                <div class="ticker-stat">
+                    <span class="ts-label">52W HIGH / LOW</span>
+                    <span class="ts-val mono" id="nav52W">₹4,446.8 / ₹2,021.5</span>
+                </div>
+                <div class="ticker-stat">
+                    <span class="ts-label">LONG-TERM CAGR</span>
+                    <span class="ts-val mono text-accent" id="navCAGR">+44.9% p.a.</span>
+                </div>
+                <div class="ticker-stat">
+                    <span class="ts-label">TOTAL DATA</span>
+                    <span class="ts-val mono text-cyan" id="navPoints">2,318 Days</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================================================== -->
+    <!-- 2. PRIMARY TAB NAVIGATION                                -->
+    <!-- ======================================================== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-tabs" role="tablist">
+                <button class="nav-tab active" data-view="technicals">
+                    <span class="tab-icon">📈</span> Price & Technicals
+                </button>
+                <button class="nav-tab" data-view="forecasting">
+                    <span class="tab-icon">🤖</span> ML Forecasting Engine
+                </button>
+                <button class="nav-tab" data-view="powerbi">
+                    <span class="tab-icon">📊</span> Power BI Executive View
+                </button>
+                <button class="nav-tab" data-view="anomalies">
+                    <span class="tab-icon">🚨</span> 15-Yr Trends & Anomalies
+                </button>
+                <button class="nav-tab" data-view="explorer">
+                    <span class="tab-icon">📁</span> Data Explorer & Export
+                </button>
+            </div>
+            <div class="nav-actions">
+                <a href="#downloadCenter" class="btn-primary-sm" onclick="switchView('explorer')">
+                    <span>⬇ Export Datasets</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================================================== -->
+    <!-- 3. EXECUTIVE STATS STRIP                                 -->
+    <!-- ======================================================== -->
+    <div class="container">
+        <section class="stat-strip">
+            <div class="stat-card border-violet">
+                <div class="sc-header">
+                    <span class="sc-title">Best Price Accuracy</span>
+                    <span class="sc-badge badge-violet">Prophet ML</span>
+                </div>
+                <div class="sc-body">
+                    <div class="sc-main mono text-violet">3.95%</div>
+                    <div class="sc-sub">Mean Absolute % Error (MAPE)</div>
+                </div>
+                <div class="sc-footer">RMSE: ₹175.13 · 95% Confidence Band</div>
+            </div>
+
+            <div class="stat-card border-emerald">
+                <div class="sc-header">
+                    <span class="sc-title">Best Directional Hit</span>
+                    <span class="sc-badge badge-emerald">XGBoost</span>
+                </div>
+                <div class="sc-body">
+                    <div class="sc-main mono text-emerald">71.19%</div>
+                    <div class="sc-sub">Directional Accuracy (Up vs Down)</div>
+                </div>
+                <div class="sc-footer">+21.2% over Random 50% Baseline</div>
+            </div>
+
+            <div class="stat-card border-cyan">
+                <div class="sc-header">
+                    <span class="sc-title">Deep Learning Model</span>
+                    <span class="sc-badge badge-cyan">LSTM RNN</span>
+                </div>
+                <div class="sc-body">
+                    <div class="sc-main mono text-cyan">5.17%</div>
+                    <div class="sc-sub">MAPE · All-Rounder Accuracy</div>
+                </div>
+                <div class="sc-footer">RMSE: ₹219.24 · Recurrent Lookback</div>
+            </div>
+
+            <div class="stat-card border-amber">
+                <div class="sc-header">
+                    <span class="sc-title">Regression Benchmark</span>
+                    <span class="sc-badge badge-amber">Linear / Poly</span>
+                </div>
+                <div class="sc-body">
+                    <div class="sc-main mono text-amber">1.92%</div>
+                    <div class="sc-sub">OLS Lag Regression MAPE</div>
+                </div>
+                <div class="sc-footer">R²: 0.9562 · OLS Trendline</div>
+            </div>
+
+            <div class="stat-card border-rose">
+                <div class="sc-header">
+                    <span class="sc-title">Dataset Depth</span>
+                    <span class="sc-badge badge-rose">15+ Yrs</span>
+                </div>
+                <div class="sc-body">
+                    <div class="sc-main mono text-rose">2,318</div>
+                    <div class="sc-sub">Trading Sessions Cleaned</div>
+                </div>
+                <div class="sc-footer">2017 to 2026 Complete Daily OHLCV</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- 4. VIEW 1: PRICE & TECHNICAL ANALYSIS                    -->
+    <!-- ======================================================== -->
+    <main class="container">
+        <section id="view-technicals" class="view-panel active">
+            <!-- Controls toolbar -->
+            <div class="chart-toolbar">
+                <div class="toolbar-left">
+                    <div class="period-pills" id="histPeriods">
+                        <button class="pill-btn" data-period="1W">1W</button>
+                        <button class="pill-btn" data-period="1M">1M</button>
+                        <button class="pill-btn" data-period="3M">3M</button>
+                        <button class="pill-btn" data-period="6M">6M</button>
+                        <button class="pill-btn active" data-period="1Y">1Y</button>
+                        <button class="pill-btn" data-period="3Y">3Y</button>
+                        <button class="pill-btn" data-period="5Y">5Y</button>
+                        <button class="pill-btn" data-period="ALL">ALL</button>
+                    </div>
+
+                    <div class="toolbar-sep"></div>
+
+                    <!-- Chart Type -->
+                    <div class="mode-pills" id="chartTypeSwitch">
+                        <button class="pill-btn active" data-type="area">Area / Line</button>
+                        <button class="pill-btn" data-type="bars">High-Low Range</button>
+                    </div>
+                </div>
+
+                <div class="toolbar-right">
+                    <div class="indicator-toggles">
+                        <label class="toggle-pill active" data-ind="sma20">
+                            <span class="ind-dot ind-sma20"></span> SMA 20
+                        </label>
+                        <label class="toggle-pill active" data-ind="sma50">
+                            <span class="ind-dot ind-sma50"></span> SMA 50
+                        </label>
+                        <label class="toggle-pill" data-ind="ema200">
+                            <span class="ind-dot ind-ema200"></span> EMA 200
+                        </label>
+                        <label class="toggle-pill active" data-ind="bollinger">
+                            <span class="ind-dot ind-bb"></span> Bollinger Bands
+                        </label>
+                        <label class="toggle-pill active" data-ind="volume">
+                            <span class="ind-dot ind-vol"></span> Volume
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main interactive chart box -->
+            <div class="glass-box main-chart-box">
+                <div class="chart-head">
+                    <div class="chart-title-group">
+                        <h2 class="chart-heading">Reliance Industries (BSE / NSE) — Historical Stock Price</h2>
+                        <span class="chart-subtitle" id="histSubtitle">Displaying 1 Year (Daily Trading Sessions)</span>
+                    </div>
+                    <div class="live-cursor-hud" id="cursorHud">
+                        <span>Hover chart for OHLCV data</span>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="historicalChart"></canvas>
+                    <div class="chart-loader hidden" id="histLoader">
+                        <div class="spinner"></div> Loading price history...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Sub-Indicators Chart (RSI, MACD, Volatility) -->
+            <div class="glass-box sub-chart-box">
+                <div class="sub-chart-header">
+                    <div class="sub-tabs" id="subIndicatorTabs">
+                        <button class="sub-tab active" data-sub="rsi">Relative Strength Index (RSI 14)</button>
+                        <button class="sub-tab" data-sub="macd">MACD (12, 26, 9) Oscillator</button>
+                        <button class="sub-tab" data-sub="volatility">30-Day Annualized Volatility %</button>
+                    </div>
+                    <div class="sub-indicator-badge" id="subIndicatorStat">
+                        Current RSI: <strong class="mono text-violet">48.2 (Neutral)</strong>
+                    </div>
+                </div>
+                <div class="sub-chart-wrapper">
+                    <canvas id="subChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Technical Summary Metrics Grid -->
+            <div class="tech-metrics-grid">
+                <div class="tech-metric-card">
+                    <span class="tm-label">Golden Cross Status</span>
+                    <div class="tm-val text-emerald" id="techCross">Bullish (SMA 20 > SMA 50)</div>
+                    <span class="tm-detail">20-Day: ₹3,982.1 vs 50-Day: ₹3,845.6</span>
+                </div>
+                <div class="tech-metric-card">
+                    <span class="tm-label">Bollinger %B Envelope</span>
+                    <div class="tm-val text-cyan" id="techBB">Middle Band (₹3,982.1)</div>
+                    <span class="tm-detail">Upper: ₹4,198.4 · Lower: ₹3,765.8</span>
+                </div>
+                <div class="tech-metric-card">
+                    <span class="tm-label">200-Day Long-Term Trend</span>
+                    <div class="tm-val text-emerald" id="techEMA200">Above 200 EMA (Bullish)</div>
+                    <span class="tm-detail">Trading +18.4% above institutional base</span>
+                </div>
+                <div class="tech-metric-card">
+                    <span class="tm-label">Maximum Historical Drawdown</span>
+                    <div class="tm-val text-rose" id="techDrawdown">-44.6% (COVID 2020)</div>
+                    <span class="tm-detail">Current Drawdown from ATH: -12.1%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- 5. VIEW 2: ML FORECASTING ENGINE                         -->
+        <!-- ======================================================== -->
+        <section id="view-forecasting" class="view-panel">
+            <div class="section-title-wrap">
+                <div>
+                    <span class="section-eye">PREDICTIVE ARTIFICIAL INTELLIGENCE</span>
+                    <h2 class="section-h2">Multi-Model Stock Price Forecasting Engine</h2>
+                    <p class="section-desc">
+                        Comparing time-series forecasting, regression, gradient boosting, and deep recurrent neural networks on BSE market data.
+                    </p>
+                </div>
+                <div class="model-select-tabs" id="modelTabs">
+                    <button class="model-tab active" data-model="prophet">Prophet</button>
+                    <button class="model-tab" data-model="xgboost">XGBoost</button>
+                    <button class="model-tab" data-model="lstm">LSTM Neural Net</button>
+                    <button class="model-tab" data-model="linear_regression">Linear Regression</button>
+                    <button class="model-tab" data-model="polynomial">Polynomial Reg (Deg 2)</button>
+                    <button class="model-tab" data-model="arima">ARIMA / SARIMA</button>
+                </div>
+            </div>
+
+            <!-- Forecast Chart Glass Box -->
+            <div class="glass-box forecast-card">
+                <div class="forecast-header">
+                    <div class="fh-left">
+                        <span class="badge-tag" id="currentModelBadge">Prophet Decomposition</span>
+                        <h3 class="forecast-model-name" id="currentModelTitle">Prophet Trend & Seasonality Projection</h3>
+                    </div>
+
+                    <!-- Horizon pills (only shown for models supporting multi-horizon) -->
+                    <div class="horizon-pills-row" id="horizonSelector">
+                        <span class="horizon-label">Forecast Horizon:</span>
+                        <button class="horizon-btn" data-days="7">7 Days</button>
+                        <button class="horizon-btn" data-days="15">15 Days</button>
+                        <button class="horizon-btn active" data-days="30">30 Days</button>
+                        <button class="horizon-btn" data-days="60">60 Days</button>
+                        <button class="horizon-btn" data-days="90">90 Days</button>
+                        <button class="horizon-btn" data-days="180">180 Days</button>
+                    </div>
+                </div>
+
+                <div class="chart-wrapper forecast-wrapper">
+                    <canvas id="forecastChart"></canvas>
+                    <div class="chart-loader hidden" id="forecastLoader">
+                        <div class="spinner"></div> Computing model forecast...
+                    </div>
+                </div>
+
+                <div class="forecast-meta-bar" id="forecastMetaBar">
+                    <div class="fmb-item">
+                        <span class="fmb-lbl">Model Architecture:</span>
+                        <span class="fmb-val" id="metaArch">Bayesian Generalized Additive Time Series</span>
+                    </div>
+                    <div class="fmb-item">
+                        <span class="fmb-lbl">Validation MAPE:</span>
+                        <span class="fmb-val text-violet" id="metaMAPE">3.95% (Lowest error)</span>
+                    </div>
+                    <div class="fmb-item">
+                        <span class="fmb-lbl">Directional Hit Rate:</span>
+                        <span class="fmb-val text-emerald" id="metaDir">59.32%</span>
+                    </div>
+                    <div class="fmb-item">
+                        <span class="fmb-lbl">Projected Target (30D):</span>
+                        <span class="fmb-val text-accent mono" id="metaTarget">₹3,978.65 (95% CI: ₹3,760 - ₹4,197)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model Evaluation Charts (4-grid) -->
+            <div class="eval-grid-header">
+                <div>
+                    <span class="section-eye">BENCHMARK EVALUATION</span>
+                    <h3 class="section-h3">Model Performance Comparison & Metrics</h3>
+                </div>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="chart-box half">
+                    <canvas id="rmseChart"></canvas>
+                </div>
+                <div class="chart-box half">
+                    <canvas id="mapeChart"></canvas>
+                </div>
+                <div class="chart-box half">
+                    <canvas id="maeChart"></canvas>
+                </div>
+                <div class="chart-box half">
+                    <canvas id="dirChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Full Leaderboard Table -->
+            <div class="glass-box table-card">
+                <div class="table-card-head">
+                    <h3 class="table-card-title">Comprehensive Model Performance Leaderboard</h3>
+                    <span class="table-card-sub">Tested against identical holdout period (Last 60 BSE trading sessions)</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="leaderboard-table" id="leaderboardTable">
+                        <thead>
+                            <tr>
+                                <th>Model Name</th>
+                                <th>RMSE ↓</th>
+                                <th>MAE ↓</th>
+                                <th>MAPE % ↓</th>
+                                <th>Directional Hit % ↑</th>
+                                <th>R² Score ↑</th>
+                                <th>Category Verdict</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboardBody">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- 6. VIEW 3: POWER BI EXECUTIVE ANALYTICS                  -->
+        <!-- ======================================================== -->
+        <section id="view-powerbi" class="view-panel">
+            <div class="section-title-wrap">
+                <div>
+                    <span class="section-eye">POWER BI & DAX ANALYTICAL SUITE</span>
+                    <h2 class="section-h2">Interactive Power BI Executive Dashboard</h2>
+                    <p class="section-desc">
+                        Simulating enterprise Power BI slicers, DAX calculated measures, and matrix drilldowns on 15+ years of BSE market records.
+                    </p>
+                </div>
+                <div class="pbi-badge-wrap">
+                    <span class="pbi-badge">⚡ DAX Engine Active</span>
+                </div>
+            </div>
+
+            <!-- Slicers Bar -->
+            <div class="glass-box slicer-bar">
+                <div class="slicer-group">
+                    <span class="slicer-label">Fiscal Year Slicer:</span>
+                    <div class="slicer-pills" id="pbiYearSlicer">
+                        <button class="s-pill active" data-fy="ALL">ALL (10 Yrs)</button>
+                        <button class="s-pill" data-fy="FY26-27">FY26-27</button>
+                        <button class="s-pill" data-fy="FY25-26">FY25-26</button>
+                        <button class="s-pill" data-fy="FY24-25">FY24-25</button>
+                        <button class="s-pill" data-fy="FY23-24">FY23-24</button>
+                        <button class="s-pill" data-fy="FY22-23">FY22-23</button>
+                        <button class="s-pill" data-fy="FY21-22">FY21-22</button>
+                        <button class="s-pill" data-fy="FY20-21">FY20-21</button>
+                    </div>
+                </div>
+
+                <div class="slicer-sep"></div>
+
+                <div class="slicer-group">
+                    <span class="slicer-label">Quarter Slicer:</span>
+                    <div class="slicer-pills" id="pbiQuarterSlicer">
+                        <button class="s-pill active" data-q="ALL">ALL</button>
+                        <button class="s-pill" data-q="Q1">Q1 (Apr-Jun)</button>
+                        <button class="s-pill" data-q="Q2">Q2 (Jul-Sep)</button>
+                        <button class="s-pill" data-q="Q3">Q3 (Oct-Dec)</button>
+                        <button class="s-pill" data-q="Q4">Q4 (Jan-Mar)</button>
+                    </div>
+                </div>
+
+                <div class="slicer-sep"></div>
+
+                <div class="slicer-group">
+                    <span class="slicer-label">DAX Selected Metric:</span>
+                    <select id="pbiMetricSelect" class="slicer-select">
+                        <option value="close">Closing Price (INR)</option>
+                        <option value="daily_return">Daily Return %</option>
+                        <option value="volume">Trading Volume</option>
+                        <option value="volatility_30d">30D Rolling Volatility %</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Power BI Dynamic DAX Cards Grid -->
+            <div class="pbi-cards-grid">
+                <div class="pbi-kpi-card">
+                    <span class="pbi-kpi-title">[Selected Close Price]</span>
+                    <div class="pbi-kpi-val mono" id="pbiKpiClose">₹3,872.10</div>
+                    <span class="pbi-kpi-sub" id="pbiKpiSubClose">Filtered Period End</span>
+                </div>
+                <div class="pbi-kpi-card">
+                    <span class="pbi-kpi-title">[Price YoY % Return]</span>
+                    <div class="pbi-kpi-val mono text-emerald" id="pbiKpiYoY">+74.8%</div>
+                    <span class="pbi-kpi-sub">vs SAMEPERIODLASTYEAR</span>
+                </div>
+                <div class="pbi-kpi-card">
+                    <span class="pbi-kpi-title">[Annualized 30D Volatility]</span>
+                    <div class="pbi-kpi-val mono text-cyan" id="pbiKpiVol">22.4%</div>
+                    <span class="pbi-kpi-sub">STDEV.S * SQRT(252)</span>
+                </div>
+                <div class="pbi-kpi-card">
+                    <span class="pbi-kpi-title">[Sharpe Ratio (Rf=6.5%)]</span>
+                    <div class="pbi-kpi-val mono text-violet" id="pbiKpiSharpe">1.84</div>
+                    <span class="pbi-kpi-sub">Annualized Excess Return / Vol</span>
+                </div>
+                <div class="pbi-kpi-card">
+                    <span class="pbi-kpi-title">[Max Drawdown %]</span>
+                    <div class="pbi-kpi-val mono text-rose" id="pbiKpiDrawdown">-44.6%</div>
+                    <span class="pbi-kpi-sub">Peak-to-Trough Decline</span>
+                </div>
+                <div class="pbi-kpi-card">
+                    <span class="pbi-kpi-title">[Flagged Anomalies]</span>
+                    <div class="pbi-kpi-val mono text-amber" id="pbiKpiAnomalies">300 Days</div>
+                    <span class="pbi-kpi-sub">Z-Score & Return Outliers</span>
+                </div>
+            </div>
+
+            <!-- Power BI Chart Canvas -->
+            <div class="glass-box pbi-chart-box">
+                <div class="chart-head">
+                    <div>
+                        <h3 class="chart-heading" id="pbiChartTitle">Power BI Filtered Metric Visual</h3>
+                        <span class="chart-subtitle" id="pbiChartSub">Dynamic visual updating in response to active slicers</span>
+                    </div>
+                    <div class="pbi-hud" id="pbiFilteredPoints">2,318 Rows in Filter Context</div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="pbiChart"></canvas>
+                </div>
+            </div>
+
+            <!-- DAX Measures Inspector Preview -->
+            <div class="glass-box dax-code-box">
+                <div class="dax-head">
+                    <span class="dax-title">Power BI DAX Measures Library (`DAX_Measures.dax`)</span>
+                    <a href="/powerbi/DAX_Measures.dax" download="DAX_Measures.dax" class="btn-outline-sm">
+                        <span>📥 Download DAX File</span>
+                    </a>
+                </div>
+                <div class="dax-code-preview">
+<pre><code>// [Compound Annual Growth Rate (CAGR) %]
+Long Term CAGR % = 
+VAR FirstDate = MIN('BSE_Stock_Data'[Date])
+VAR LastDate = MAX('BSE_Stock_Data'[Date])
+VAR InitialPrice = CALCULATE(MIN('BSE_Stock_Data'[Close_Price]), 'BSE_Stock_Data'[Date] = FirstDate)
+VAR FinalPrice = CALCULATE(MAX('BSE_Stock_Data'[Close_Price]), 'BSE_Stock_Data'[Date] = LastDate)
+VAR NumYears = DIVIDE(DATEDIFF(FirstDate, LastDate, DAY), 365.25, 1)
+RETURN
+    IF(NumYears > 0 && InitialPrice > 0, ((FinalPrice / InitialPrice) ^ (1 / NumYears)) - 1, BLANK())
+
+// [Sharpe Ratio (Indian Repo Rf = 6.5%)]
+Sharpe Ratio = 
+VAR RiskFreeRateDaily = 0.065 / 252
+VAR AvgDailyReturn = AVERAGE('BSE_Stock_Data'[Daily_Return_Pct])
+VAR DailyStd = STDEV.S('BSE_Stock_Data'[Daily_Return_Pct])
+RETURN
+    DIVIDE((AvgDailyReturn - RiskFreeRateDaily) * SQRT(252), DailyStd * SQRT(252), 0)</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- 7. VIEW 4: 15-YR TRENDS & ANOMALIES                      -->
+        <!-- ======================================================== -->
+        <section id="view-anomalies" class="view-panel">
+            <div class="section-title-wrap">
+                <div>
+                    <span class="section-eye">MARKET CYCLES & OUTLIER DETECTION</span>
+                    <h2 class="section-h2">15-Year BSE Macro Trends & Anomaly Radar</h2>
+                    <p class="section-desc">
+                        Automated AI-assisted screening flags market shocks, flash crashes, volume explosions, and pandemic recoveries.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Market Cycles Timeline Cards -->
+            <div class="macro-cycles-grid">
+                <div class="cycle-card">
+                    <div class="cycle-period text-cyan">2017 – 2019</div>
+                    <h4 class="cycle-title">Base Accumulation & Digital Telecom Surge</h4>
+                    <p class="cycle-desc">
+                        Stock price climbed steadily from ~₹120 to ₹350+ driven by Reliance Jio's disruptive market expansion and petrochemical growth.
+                    </p>
+                    <div class="cycle-stat">Cycle Gain: <strong class="text-emerald">+192%</strong></div>
+                </div>
+
+                <div class="cycle-card border-crash">
+                    <div class="cycle-period text-rose">MARCH 2020</div>
+                    <h4 class="cycle-title">COVID-19 Global Market Crash</h4>
+                    <p class="cycle-desc">
+                        Intense panic selling triggered a sharp -44.6% max drawdown as markets priced in nationwide lockdowns and supply chain halt.
+                    </p>
+                    <div class="cycle-stat">Max Drawdown: <strong class="text-rose">-44.6%</strong></div>
+                </div>
+
+                <div class="cycle-card border-rally">
+                    <div class="cycle-period text-emerald">2020 – 2023</div>
+                    <h4 class="cycle-title">Tech Influx & Post-Pandemic Bull Run</h4>
+                    <p class="cycle-desc">
+                        Billion-dollar investments from Google, Meta, and sovereign wealth funds propelled a monumental V-shaped recovery to ₹2,500+.
+                    </p>
+                    <div class="cycle-stat">Recovery Rally: <strong class="text-emerald">+610%</strong></div>
+                </div>
+
+                <div class="cycle-card border-violet">
+                    <div class="cycle-period text-violet">2024 – 2026</div>
+                    <h4 class="cycle-title">Mega-Cap Breakout & Clean Energy Capex</h4>
+                    <p class="cycle-desc">
+                        Stock surged past ₹4,000 reaching an All-Time High of ₹4,446.8 on solar giga-factory rollouts, retail spin-offs, and index weightage.
+                    </p>
+                    <div class="cycle-stat">Peak Valuation: <strong class="text-violet">₹4,446.80</strong></div>
+                </div>
+            </div>
+
+            <!-- Anomaly Table Filter & Search -->
+            <div class="glass-box anomaly-table-card">
+                <div class="at-header">
+                    <div>
+                        <h3 class="table-card-title">Historical Anomaly & Outlier Event Log</h3>
+                        <span class="table-card-sub">Screened with Z-Score > 3.0σ, Daily Return &lt; -3.5% or &gt; +4.5%, and Volume Shocks</span>
+                    </div>
+                    <div class="at-filters">
+                        <select id="anomalyTypeFilter" class="slicer-select">
+                            <option value="ALL">All Event Types</option>
+                            <option value="Crash">Severe Crashes (&lt; -3.5%)</option>
+                            <option value="Surge">Extreme Rallies (&gt; +4.5%)</option>
+                            <option value="Volume Shock">Abnormal Volume Shocks</option>
+                        </select>
+                        <input type="text" id="anomalySearch" class="search-input" placeholder="Search date (e.g. 2020)..." />
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="anomaly-table">
+                        <thead>
+                            <tr>
+                                <th>Trading Date</th>
+                                <th>Close Price</th>
+                                <th>Daily Move %</th>
+                                <th>Volume (Shares)</th>
+                                <th>Classification</th>
+                                <th>Trigger Catalyst & Flags</th>
+                            </tr>
+                        </thead>
+                        <tbody id="anomalyTableBody">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- 8. VIEW 5: DATA EXPLORER & EXPORT                        -->
+        <!-- ======================================================== -->
+        <section id="view-explorer" class="view-panel">
+            <div class="section-title-wrap" id="downloadCenter">
+                <div>
+                    <span class="section-eye">REPOSITORY DATA & ARTIFACTS</span>
+                    <h2 class="section-h2">Stock Data Explorer & Export Center</h2>
+                    <p class="section-desc">
+                        Access all 2,318 historical trade records, download enriched datasets, Power BI schemas, and forecasting artifacts.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Download Artifacts Cards Grid -->
+            <div class="downloads-grid">
+                <div class="download-card">
+                    <div class="dc-icon">📊</div>
+                    <div class="dc-info">
+                        <h4 class="dc-title">Enriched Technical Dataset (CSV)</h4>
+                        <p class="dc-desc">Contains all OHLCV prices, Moving Averages (20, 50, 200), Bollinger Bands, RSI 14, MACD, and Returns.</p>
+                        <a href="/bses_stock_enriched.csv" download="bses_stock_enriched.csv" class="btn-primary-sm">
+                            <span>⬇ Download CSV (450 KB)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="dc-icon">⚡</div>
+                    <div class="dc-info">
+                        <h4 class="dc-title">Power BI Star-Schema Dataset (CSV)</h4>
+                        <p class="dc-desc">Includes Indian Fiscal Year calendar, Quarter, Month hierarchies, Anomaly tags, and forecast projections.</p>
+                        <a href="/powerbi/bse_stock_powerbi_dataset.csv" download="bse_stock_powerbi_dataset.csv" class="btn-primary-sm">
+                            <span>⬇ Download Power BI CSV</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="dc-icon">📑</div>
+                    <div class="dc-info">
+                        <h4 class="dc-title">Power BI DAX Measures Library (.dax)</h4>
+                        <p class="dc-desc">25+ production DAX formulas including MoM %, YoY %, Rolling Volatility, Sharpe Ratio, and Dynamic Slicers.</p>
+                        <a href="/powerbi/DAX_Measures.dax" download="DAX_Measures.dax" class="btn-primary-sm">
+                            <span>⬇ Download DAX File</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="dc-icon">🤖</div>
+                    <div class="dc-info">
+                        <h4 class="dc-title">Model Forecasts & Metrics (JSON)</h4>
+                        <p class="dc-desc">Complete evaluation metrics (RMSE, MAE, MAPE, Directional Acc) and 7 to 180-day multi-horizon projections.</p>
+                        <a href="/forecast_results.json" download="forecast_results.json" class="btn-primary-sm">
+                            <span>⬇ Download JSON Forecasts</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Interactive Raw Table -->
+            <div class="glass-box explorer-table-box">
+                <div class="at-header">
+                    <div>
+                        <h3 class="table-card-title">Full Historical Trading Sessions (2,318 Days)</h3>
+                        <span class="table-card-sub" id="tablePaginationInfo">Showing records 1 to 25 of 2,318</span>
+                    </div>
+                    <div class="at-filters">
+                        <input type="text" id="rawSearch" class="search-input" placeholder="Search date (YYYY-MM-DD)..." />
+                        <select id="pageSizeSelect" class="slicer-select">
+                            <option value="25">25 per page</option>
+                            <option value="50">50 per page</option>
+                            <option value="100">100 per page</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="raw-data-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Open (₹)</th>
+                                <th>High (₹)</th>
+                                <th>Low (₹)</th>
+                                <th>Close (₹)</th>
+                                <th>Volume</th>
+                                <th>Daily Move %</th>
+                                <th>SMA 20 (₹)</th>
+                                <th>RSI 14</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rawTableBody">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination footer -->
+                <div class="pagination-footer">
+                    <button class="pill-btn" id="prevPageBtn">Previous</button>
+                    <span class="page-indicator" id="pageIndicator">Page 1 of 93</span>
+                    <button class="pill-btn" id="nextPageBtn">Next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================== -->
+    <!-- 9. FOOTER & COMPLIANCE DISCLOSURE                        -->
+    <!-- ======================================================== -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="brand-name">BSE <span class="gradient-text">MarketPulse</span></div>
+                <p class="footer-about">
+                    Enterprise Stock Market Analysis & ML Forecasting Terminal analyzing 15+ years of BSE market data with Python, Pandas, Regression Models, Prophet, XGBoost, LSTM, and Microsoft Power BI DAX.
+                </p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-heading">Technologies</div>
+                <ul class="footer-links">
+                    <li>Python 3.13 & Pandas</li>
+                    <li>Scikit-Learn Regression & Ridge</li>
+                    <li>Prophet Time-Series & XGBoost</li>
+                    <li>LSTM Recurrent Deep Learning</li>
+                    <li>Microsoft Power BI & DAX Formulas</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-heading">Deliverables</div>
+                <ul class="footer-links">
+                    <li>Multi-Horizon Price Projections (7–180D)</li>
+                    <li>95% Confidence Interval Bands</li>
+                    <li>Directional Accuracy Benchmark</li>
+                    <li>Automated Anomaly Detection Radar</li>
+                    <li>Star-Schema Tabular Data Model</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container fb-inner">
+                <p class="disclaimer">
+                    ⚠ <strong>Disclaimer:</strong> Built strictly for educational, research, and technical analytical purposes. Historical metrics and machine learning forecasts do not constitute financial advice.
+                </p>
+                <p class="copyright">© 2026 BSE MarketPulse Analytics · RELIANCE.NS Historical Archive</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Application Logic Script -->
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3952 @@
+[
+  {
+    "date": "2017-02-06",
+    "close": 114.36,
+    "open": 120.11,
+    "high": 120.87,
+    "low": 113.68,
+    "volume": 19796400,
+    "daily_return_pct": -3.74,
+    "reasons": [
+      "Severe Drop (-3.74%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2017-03-06",
+    "close": 105.24,
+    "open": 98.89,
+    "high": 106.08,
+    "low": 98.89,
+    "volume": 11163825,
+    "daily_return_pct": 6.34,
+    "reasons": [
+      "Extreme Rally (+6.34%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2017-05-16",
+    "close": 117.66,
+    "open": 111.36,
+    "high": 121.04,
+    "low": 111.34,
+    "volume": 10434114,
+    "daily_return_pct": 6.11,
+    "reasons": [
+      "Extreme Rally (+6.11%)",
+      "Abnormal Volume Spike (6.1x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2017-07-07",
+    "close": 118.54,
+    "open": 117.67,
+    "high": 125.33,
+    "low": 116.89,
+    "volume": 5970249,
+    "daily_return_pct": 0.59,
+    "reasons": [
+      "Abnormal Volume Spike (5.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2017-07-13",
+    "close": 123.54,
+    "open": 122.79,
+    "high": 125.78,
+    "low": 121.68,
+    "volume": 6286662,
+    "daily_return_pct": 0.99,
+    "reasons": [
+      "Abnormal Volume Spike (4.5x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2017-07-14",
+    "close": 124.52,
+    "open": 124.44,
+    "high": 130.93,
+    "low": 123.12,
+    "volume": 11518155,
+    "daily_return_pct": 0.79,
+    "reasons": [
+      "Abnormal Volume Spike (6.6x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2017-10-17",
+    "close": 108.07,
+    "open": 108.33,
+    "high": 108.82,
+    "low": 107.67,
+    "volume": 3279051,
+    "daily_return_pct": -0.18,
+    "reasons": [
+      "Abnormal Volume Spike (5.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2017-12-28",
+    "close": 102.78,
+    "open": 101.48,
+    "high": 105.44,
+    "low": 100.22,
+    "volume": 3618684,
+    "daily_return_pct": 1.54,
+    "reasons": [
+      "Abnormal Volume Spike (4.8x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2017-12-29",
+    "close": 101.05,
+    "open": 105.89,
+    "high": 106.83,
+    "low": 99.14,
+    "volume": 18574353,
+    "daily_return_pct": -1.68,
+    "reasons": [
+      "Abnormal Volume Spike (13.6x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2018-01-05",
+    "close": 105.11,
+    "open": 103.88,
+    "high": 106.09,
+    "low": 102.24,
+    "volume": 10548018,
+    "daily_return_pct": 1.65,
+    "reasons": [
+      "Abnormal Volume Spike (5.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2018-01-12",
+    "close": 106.88,
+    "open": 104.67,
+    "high": 107.97,
+    "low": 104.11,
+    "volume": 8267949,
+    "daily_return_pct": 2.28,
+    "reasons": [
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2018-01-16",
+    "close": 104.41,
+    "open": 104.44,
+    "high": 106.42,
+    "low": 103.44,
+    "volume": 12564837,
+    "daily_return_pct": -4.23,
+    "reasons": [
+      "Severe Drop (-4.23%)",
+      "Abnormal Volume Spike (3.9x avg)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2018-03-05",
+    "close": 88.93,
+    "open": 88.96,
+    "high": 89.67,
+    "low": 88.34,
+    "volume": 13735017,
+    "daily_return_pct": -0.03,
+    "reasons": [
+      "Abnormal Volume Spike (6.2x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2018-03-22",
+    "close": 81.78,
+    "open": 85.78,
+    "high": 85.78,
+    "low": 81.07,
+    "volume": 2659347,
+    "daily_return_pct": -3.83,
+    "reasons": [
+      "Severe Drop (-3.83%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2018-07-13",
+    "close": 92.56,
+    "open": 95.67,
+    "high": 96.19,
+    "low": 91.86,
+    "volume": 1268244,
+    "daily_return_pct": -3.78,
+    "reasons": [
+      "Severe Drop (-3.78%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2018-09-17",
+    "close": 86.52,
+    "open": 81.22,
+    "high": 86.99,
+    "low": 81.22,
+    "volume": 5117040,
+    "daily_return_pct": 6.56,
+    "reasons": [
+      "Extreme Rally (+6.56%)",
+      "Abnormal Volume Spike (4.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2018-09-21",
+    "close": 79.71,
+    "open": 84.0,
+    "high": 84.31,
+    "low": 78.91,
+    "volume": 5167494,
+    "daily_return_pct": -2.54,
+    "reasons": [
+      "Abnormal Volume Spike (4.4x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2018-10-09",
+    "close": 70.39,
+    "open": 73.02,
+    "high": 73.32,
+    "low": 70.11,
+    "volume": 1827261,
+    "daily_return_pct": -3.56,
+    "reasons": [
+      "Severe Drop (-3.56%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2018-12-21",
+    "close": 64.92,
+    "open": 66.28,
+    "high": 67.0,
+    "low": 64.11,
+    "volume": 2871540,
+    "daily_return_pct": -2.26,
+    "reasons": [
+      "Abnormal Volume Spike (4.7x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2019-03-05",
+    "close": 66.84,
+    "open": 63.33,
+    "high": 67.0,
+    "low": 63.33,
+    "volume": 1708866,
+    "daily_return_pct": 5.41,
+    "reasons": [
+      "Extreme Rally (+5.41%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2019-03-14",
+    "close": 68.53,
+    "open": 68.33,
+    "high": 71.44,
+    "low": 68.0,
+    "volume": 4295772,
+    "daily_return_pct": 0.16,
+    "reasons": [
+      "Abnormal Volume Spike (4.9x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2019-03-27",
+    "close": 68.04,
+    "open": 65.68,
+    "high": 68.58,
+    "low": 65.67,
+    "volume": 4886145,
+    "daily_return_pct": 3.59,
+    "reasons": [
+      "Abnormal Volume Spike (3.9x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2019-06-27",
+    "close": 67.77,
+    "open": 68.33,
+    "high": 68.33,
+    "low": 66.67,
+    "volume": 2752686,
+    "daily_return_pct": -1.51,
+    "reasons": [
+      "Abnormal Volume Spike (3.3x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2019-07-25",
+    "close": 62.2,
+    "open": 61.56,
+    "high": 62.48,
+    "low": 61.12,
+    "volume": 3011985,
+    "daily_return_pct": 1.7,
+    "reasons": [
+      "Abnormal Volume Spike (3.4x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2019-07-26",
+    "close": 59.18,
+    "open": 60.56,
+    "high": 60.81,
+    "low": 58.71,
+    "volume": 1756071,
+    "daily_return_pct": -4.86,
+    "reasons": [
+      "Severe Drop (-4.86%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2019-08-02",
+    "close": 53.44,
+    "open": 55.78,
+    "high": 55.95,
+    "low": 52.78,
+    "volume": 2029842,
+    "daily_return_pct": -3.92,
+    "reasons": [
+      "Severe Drop (-3.92%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2019-08-20",
+    "close": 52.72,
+    "open": 50.44,
+    "high": 54.44,
+    "low": 50.21,
+    "volume": 2849130,
+    "daily_return_pct": 5.23,
+    "reasons": [
+      "Extreme Rally (+5.23%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2019-08-26",
+    "close": 57.37,
+    "open": 56.11,
+    "high": 58.01,
+    "low": 55.38,
+    "volume": 2055240,
+    "daily_return_pct": 4.77,
+    "reasons": [
+      "Extreme Rally (+4.77%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2019-09-24",
+    "close": 62.2,
+    "open": 60.56,
+    "high": 62.78,
+    "low": 60.11,
+    "volume": 2670489,
+    "daily_return_pct": 4.71,
+    "reasons": [
+      "Extreme Rally (+4.71%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-01-02",
+    "close": 58.06,
+    "open": 55.98,
+    "high": 59.17,
+    "low": 55.56,
+    "volume": 2297421,
+    "daily_return_pct": 4.33,
+    "reasons": [
+      "Abnormal Volume Spike (3.8x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-01-10",
+    "close": 57.21,
+    "open": 56.44,
+    "high": 58.0,
+    "low": 54.69,
+    "volume": 2785959,
+    "daily_return_pct": 2.75,
+    "reasons": [
+      "Abnormal Volume Spike (4.0x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-01-13",
+    "close": 58.26,
+    "open": 57.33,
+    "high": 59.43,
+    "low": 57.0,
+    "volume": 2630295,
+    "daily_return_pct": 1.84,
+    "reasons": [
+      "Abnormal Volume Spike (3.4x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-01-14",
+    "close": 59.04,
+    "open": 58.12,
+    "high": 60.54,
+    "low": 57.91,
+    "volume": 2681946,
+    "daily_return_pct": 1.34,
+    "reasons": [
+      "Abnormal Volume Spike (3.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-02-06",
+    "close": 60.78,
+    "open": 58.86,
+    "high": 62.0,
+    "low": 58.86,
+    "volume": 3551310,
+    "daily_return_pct": 3.21,
+    "reasons": [
+      "Abnormal Volume Spike (3.0x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-02-07",
+    "close": 63.74,
+    "open": 61.33,
+    "high": 65.56,
+    "low": 61.11,
+    "volume": 7933689,
+    "daily_return_pct": 4.87,
+    "reasons": [
+      "Extreme Rally (+4.87%)",
+      "Abnormal Volume Spike (5.6x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-02-12",
+    "close": 59.91,
+    "open": 62.78,
+    "high": 62.78,
+    "low": 59.39,
+    "volume": 2680209,
+    "daily_return_pct": -5.31,
+    "reasons": [
+      "Severe Drop (-5.31%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-02-13",
+    "close": 57.71,
+    "open": 59.9,
+    "high": 59.9,
+    "low": 57.46,
+    "volume": 1331469,
+    "daily_return_pct": -3.67,
+    "reasons": [
+      "Severe Drop (-3.67%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-02-27",
+    "close": 52.14,
+    "open": 55.5,
+    "high": 55.76,
+    "low": 51.82,
+    "volume": 2974041,
+    "daily_return_pct": -5.59,
+    "reasons": [
+      "Severe Drop (-5.59%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-04",
+    "close": 48.76,
+    "open": 50.57,
+    "high": 50.91,
+    "low": 47.37,
+    "volume": 2459295,
+    "daily_return_pct": -3.67,
+    "reasons": [
+      "Severe Drop (-3.67%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-06",
+    "close": 46.14,
+    "open": 47.22,
+    "high": 47.22,
+    "low": 45.57,
+    "volume": 1996920,
+    "daily_return_pct": -4.03,
+    "reasons": [
+      "Severe Drop (-4.03%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-09",
+    "close": 44.43,
+    "open": 45.54,
+    "high": 45.54,
+    "low": 43.67,
+    "volume": 2448783,
+    "daily_return_pct": -3.71,
+    "reasons": [
+      "Severe Drop (-3.71%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-12",
+    "close": 40.18,
+    "open": 42.73,
+    "high": 42.73,
+    "low": 39.56,
+    "volume": 2219751,
+    "daily_return_pct": -7.55,
+    "reasons": [
+      "Severe Drop (-7.55%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-16",
+    "close": 39.11,
+    "open": 40.56,
+    "high": 40.56,
+    "low": 38.34,
+    "volume": 1740015,
+    "daily_return_pct": -4.42,
+    "reasons": [
+      "Severe Drop (-4.42%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-18",
+    "close": 35.69,
+    "open": 38.21,
+    "high": 39.28,
+    "low": 35.13,
+    "volume": 1566801,
+    "daily_return_pct": -5.68,
+    "reasons": [
+      "Severe Drop (-5.68%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-19",
+    "close": 34.0,
+    "open": 35.56,
+    "high": 35.56,
+    "low": 33.33,
+    "volume": 2516346,
+    "daily_return_pct": -4.74,
+    "reasons": [
+      "Severe Drop (-4.74%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-23",
+    "close": 31.48,
+    "open": 33.33,
+    "high": 33.56,
+    "low": 31.11,
+    "volume": 2022174,
+    "daily_return_pct": -9.57,
+    "reasons": [
+      "Severe Drop (-9.57%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-03-25",
+    "close": 33.32,
+    "open": 30.56,
+    "high": 33.82,
+    "low": 30.56,
+    "volume": 2153421,
+    "daily_return_pct": 5.71,
+    "reasons": [
+      "Extreme Rally (+5.71%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-04-09",
+    "close": 36.7,
+    "open": 35.98,
+    "high": 37.08,
+    "low": 35.22,
+    "volume": 3160611,
+    "daily_return_pct": 4.65,
+    "reasons": [
+      "Extreme Rally (+4.65%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-04-16",
+    "close": 40.22,
+    "open": 37.44,
+    "high": 41.0,
+    "low": 37.25,
+    "volume": 2431593,
+    "daily_return_pct": 7.57,
+    "reasons": [
+      "Extreme Rally (+7.57%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-04-17",
+    "close": 42.91,
+    "open": 41.67,
+    "high": 43.22,
+    "low": 40.56,
+    "volume": 3225033,
+    "daily_return_pct": 6.69,
+    "reasons": [
+      "Extreme Rally (+6.69%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-04-30",
+    "close": 43.42,
+    "open": 42.53,
+    "high": 45.33,
+    "low": 42.41,
+    "volume": 6476274,
+    "daily_return_pct": 3.5,
+    "reasons": [
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-05-13",
+    "close": 45.78,
+    "open": 44.0,
+    "high": 46.56,
+    "low": 42.58,
+    "volume": 3372417,
+    "daily_return_pct": 8.15,
+    "reasons": [
+      "Extreme Rally (+8.15%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-05-22",
+    "close": 44.07,
+    "open": 46.11,
+    "high": 46.67,
+    "low": 43.72,
+    "volume": 4903443,
+    "daily_return_pct": -8.45,
+    "reasons": [
+      "Severe Drop (-8.45%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-05-29",
+    "close": 41.99,
+    "open": 43.57,
+    "high": 44.99,
+    "low": 41.46,
+    "volume": 2997684,
+    "daily_return_pct": -4.5,
+    "reasons": [
+      "Severe Drop (-4.50%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-06-05",
+    "close": 45.39,
+    "open": 43.46,
+    "high": 45.94,
+    "low": 43.46,
+    "volume": 2063763,
+    "daily_return_pct": 4.54,
+    "reasons": [
+      "Extreme Rally (+4.54%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-06-18",
+    "close": 45.07,
+    "open": 43.11,
+    "high": 45.56,
+    "low": 42.99,
+    "volume": 1797921,
+    "daily_return_pct": 4.74,
+    "reasons": [
+      "Extreme Rally (+4.74%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-06-23",
+    "close": 51.16,
+    "open": 56.09,
+    "high": 56.09,
+    "low": 50.67,
+    "volume": 16062084,
+    "daily_return_pct": 9.43,
+    "reasons": [
+      "Extreme Rally (+9.43%)",
+      "Abnormal Volume Spike (6.7x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-07-01",
+    "close": 52.43,
+    "open": 48.94,
+    "high": 53.11,
+    "low": 48.94,
+    "volume": 4795668,
+    "daily_return_pct": 6.33,
+    "reasons": [
+      "Extreme Rally (+6.33%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-07-07",
+    "close": 55.6,
+    "open": 53.56,
+    "high": 56.0,
+    "low": 52.94,
+    "volume": 7944408,
+    "daily_return_pct": 3.94,
+    "reasons": [
+      "Abnormal Volume Spike (3.3x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-07-09",
+    "close": 58.18,
+    "open": 55.56,
+    "high": 58.88,
+    "low": 55.11,
+    "volume": 7313535,
+    "daily_return_pct": 4.75,
+    "reasons": [
+      "Extreme Rally (+4.75%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-07-10",
+    "close": 55.88,
+    "open": 57.78,
+    "high": 57.78,
+    "low": 55.67,
+    "volume": 2819268,
+    "daily_return_pct": -3.95,
+    "reasons": [
+      "Severe Drop (-3.95%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-07-27",
+    "close": 56.89,
+    "open": 55.0,
+    "high": 62.08,
+    "low": 53.56,
+    "volume": 21939615,
+    "daily_return_pct": 3.79,
+    "reasons": [
+      "Abnormal Volume Spike (6.0x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-08-27",
+    "close": 57.18,
+    "open": 54.13,
+    "high": 57.77,
+    "low": 54.13,
+    "volume": 8978058,
+    "daily_return_pct": 4.84,
+    "reasons": [
+      "Extreme Rally (+4.84%)",
+      "Abnormal Volume Spike (3.0x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-08-31",
+    "close": 55.36,
+    "open": 58.33,
+    "high": 58.74,
+    "low": 54.63,
+    "volume": 4108959,
+    "daily_return_pct": -4.3,
+    "reasons": [
+      "Severe Drop (-4.30%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-09-02",
+    "close": 60.12,
+    "open": 56.38,
+    "high": 60.89,
+    "low": 55.82,
+    "volume": 21586086,
+    "daily_return_pct": 7.34,
+    "reasons": [
+      "Extreme Rally (+7.34%)",
+      "Abnormal Volume Spike (5.8x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-09-03",
+    "close": 60.64,
+    "open": 61.11,
+    "high": 62.66,
+    "low": 60.22,
+    "volume": 12896640,
+    "daily_return_pct": 0.86,
+    "reasons": [
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-09-04",
+    "close": 58.28,
+    "open": 58.89,
+    "high": 60.56,
+    "low": 58.02,
+    "volume": 5230710,
+    "daily_return_pct": -3.89,
+    "reasons": [
+      "Severe Drop (-3.89%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-09-08",
+    "close": 57.13,
+    "open": 59.58,
+    "high": 59.92,
+    "low": 56.68,
+    "volume": 2238705,
+    "daily_return_pct": -3.77,
+    "reasons": [
+      "Severe Drop (-3.77%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-09-14",
+    "close": 61.54,
+    "open": 59.0,
+    "high": 62.04,
+    "low": 59.0,
+    "volume": 8736480,
+    "daily_return_pct": 4.54,
+    "reasons": [
+      "Extreme Rally (+4.54%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-09-15",
+    "close": 65.07,
+    "open": 62.67,
+    "high": 66.44,
+    "low": 61.22,
+    "volume": 30238047,
+    "daily_return_pct": 5.74,
+    "reasons": [
+      "Extreme Rally (+5.74%)",
+      "Abnormal Volume Spike (6.3x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-09-21",
+    "close": 59.63,
+    "open": 63.22,
+    "high": 64.11,
+    "low": 59.22,
+    "volume": 2941713,
+    "daily_return_pct": -5.5,
+    "reasons": [
+      "Severe Drop (-5.50%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2020-11-17",
+    "close": 59.19,
+    "open": 58.67,
+    "high": 59.72,
+    "low": 57.22,
+    "volume": 4084452,
+    "daily_return_pct": 5.06,
+    "reasons": [
+      "Extreme Rally (+5.06%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-11-20",
+    "close": 61.64,
+    "open": 57.78,
+    "high": 62.22,
+    "low": 57.78,
+    "volume": 13671675,
+    "daily_return_pct": 6.26,
+    "reasons": [
+      "Extreme Rally (+6.26%)",
+      "Abnormal Volume Spike (5.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-11-23",
+    "close": 63.54,
+    "open": 62.78,
+    "high": 65.33,
+    "low": 62.78,
+    "volume": 11249352,
+    "daily_return_pct": 3.08,
+    "reasons": [
+      "Abnormal Volume Spike (4.3x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-12-09",
+    "close": 69.05,
+    "open": 62.64,
+    "high": 70.4,
+    "low": 62.13,
+    "volume": 32116023,
+    "daily_return_pct": 10.59,
+    "reasons": [
+      "Extreme Rally (+10.59%)",
+      "Abnormal Volume Spike (7.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2020-12-10",
+    "close": 70.14,
+    "open": 70.0,
+    "high": 72.16,
+    "low": 67.56,
+    "volume": 31130199,
+    "daily_return_pct": 1.58,
+    "reasons": [
+      "Abnormal Volume Spike (6.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2020-12-11",
+    "close": 67.66,
+    "open": 70.44,
+    "high": 70.99,
+    "low": 66.67,
+    "volume": 10507770,
+    "daily_return_pct": -3.54,
+    "reasons": [
+      "Severe Drop (-3.54%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-04-07",
+    "close": 67.38,
+    "open": 65.12,
+    "high": 69.11,
+    "low": 64.78,
+    "volume": 13022739,
+    "daily_return_pct": 3.47,
+    "reasons": [
+      "Abnormal Volume Spike (4.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-04-12",
+    "close": 63.92,
+    "open": 66.18,
+    "high": 66.18,
+    "low": 63.39,
+    "volume": 3567960,
+    "daily_return_pct": -5.64,
+    "reasons": [
+      "Severe Drop (-5.64%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-05-04",
+    "close": 68.99,
+    "open": 69.46,
+    "high": 71.31,
+    "low": 68.39,
+    "volume": 10857852,
+    "daily_return_pct": 0.52,
+    "reasons": [
+      "Abnormal Volume Spike (3.0x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-05-06",
+    "close": 75.89,
+    "open": 69.56,
+    "high": 77.0,
+    "low": 69.23,
+    "volume": 32080509,
+    "daily_return_pct": 9.13,
+    "reasons": [
+      "Extreme Rally (+9.13%)",
+      "Abnormal Volume Spike (7.0x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-05-07",
+    "close": 77.99,
+    "open": 76.72,
+    "high": 80.44,
+    "low": 76.67,
+    "volume": 23645601,
+    "daily_return_pct": 2.77,
+    "reasons": [
+      "Abnormal Volume Spike (4.5x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-05-24",
+    "close": 87.53,
+    "open": 83.68,
+    "high": 88.22,
+    "low": 82.94,
+    "volume": 13092219,
+    "daily_return_pct": 5.45,
+    "reasons": [
+      "Extreme Rally (+5.45%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-05-26",
+    "close": 101.26,
+    "open": 91.22,
+    "high": 104.7,
+    "low": 91.11,
+    "volume": 77120802,
+    "daily_return_pct": 14.06,
+    "reasons": [
+      "Extreme Rally (+14.06%)",
+      "Abnormal Volume Spike (8.1x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-05-27",
+    "close": 101.18,
+    "open": 103.37,
+    "high": 105.33,
+    "low": 99.22,
+    "volume": 37462716,
+    "daily_return_pct": -0.08,
+    "reasons": [
+      "Abnormal Volume Spike (3.5x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-07-02",
+    "close": 106.46,
+    "open": 99.33,
+    "high": 107.56,
+    "low": 99.33,
+    "volume": 26583822,
+    "daily_return_pct": 7.25,
+    "reasons": [
+      "Extreme Rally (+7.25%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-07-13",
+    "close": 122.56,
+    "open": 111.54,
+    "high": 123.89,
+    "low": 110.33,
+    "volume": 79091919,
+    "daily_return_pct": 10.72,
+    "reasons": [
+      "Extreme Rally (+10.72%)",
+      "Abnormal Volume Spike (8.2x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-07-14",
+    "close": 121.25,
+    "open": 121.01,
+    "high": 125.22,
+    "low": 119.56,
+    "volume": 38901987,
+    "daily_return_pct": -1.07,
+    "reasons": [
+      "Abnormal Volume Spike (3.6x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-07-15",
+    "close": 128.07,
+    "open": 121.5,
+    "high": 130.0,
+    "low": 121.37,
+    "volume": 47307375,
+    "daily_return_pct": 5.62,
+    "reasons": [
+      "Extreme Rally (+5.62%)",
+      "Abnormal Volume Spike (3.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-07-16",
+    "close": 132.41,
+    "open": 128.99,
+    "high": 134.44,
+    "low": 128.67,
+    "volume": 41765841,
+    "daily_return_pct": 3.39,
+    "reasons": [
+      "Abnormal Volume Spike (3.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-07-19",
+    "close": 147.61,
+    "open": 131.64,
+    "high": 156.22,
+    "low": 130.36,
+    "volume": 1,
+    "daily_return_pct": 11.48,
+    "reasons": [
+      "Extreme Rally (+11.48%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-07-20",
+    "close": 148.09,
+    "open": 150.56,
+    "high": 156.67,
+    "low": 145.18,
+    "volume": 59364855,
+    "daily_return_pct": 0.33,
+    "reasons": [
+      "Abnormal Volume Spike (4.0x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-07-22",
+    "close": 138.39,
+    "open": 148.88,
+    "high": 150.4,
+    "low": 137.28,
+    "volume": 17742690,
+    "daily_return_pct": -6.55,
+    "reasons": [
+      "Severe Drop (-6.55%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-07-23",
+    "close": 129.43,
+    "open": 138.36,
+    "high": 139.5,
+    "low": 128.78,
+    "volume": 15854463,
+    "daily_return_pct": -6.47,
+    "reasons": [
+      "Severe Drop (-6.47%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-07-26",
+    "close": 139.91,
+    "open": 129.57,
+    "high": 141.89,
+    "low": 125.56,
+    "volume": 23955102,
+    "daily_return_pct": 8.1,
+    "reasons": [
+      "Extreme Rally (+8.10%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-08-10",
+    "close": 126.7,
+    "open": 132.78,
+    "high": 133.74,
+    "low": 123.33,
+    "volume": 5238837,
+    "daily_return_pct": -4.51,
+    "reasons": [
+      "Severe Drop (-4.51%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-08-23",
+    "close": 115.52,
+    "open": 124.51,
+    "high": 125.84,
+    "low": 114.79,
+    "volume": 4713624,
+    "daily_return_pct": -6.37,
+    "reasons": [
+      "Severe Drop (-6.37%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-08-30",
+    "close": 133.03,
+    "open": 122.22,
+    "high": 134.44,
+    "low": 122.11,
+    "volume": 13830570,
+    "daily_return_pct": 8.95,
+    "reasons": [
+      "Extreme Rally (+8.95%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-09-09",
+    "close": 137.96,
+    "open": 132.22,
+    "high": 141.67,
+    "low": 131.91,
+    "volume": 22995036,
+    "daily_return_pct": 4.41,
+    "reasons": [
+      "Abnormal Volume Spike (4.3x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-09-27",
+    "close": 139.76,
+    "open": 131.33,
+    "high": 141.39,
+    "low": 131.33,
+    "volume": 22525848,
+    "daily_return_pct": 7.38,
+    "reasons": [
+      "Extreme Rally (+7.38%)",
+      "Abnormal Volume Spike (3.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-10-08",
+    "close": 148.72,
+    "open": 140.11,
+    "high": 151.67,
+    "low": 139.1,
+    "volume": 28426158,
+    "daily_return_pct": 6.87,
+    "reasons": [
+      "Extreme Rally (+6.87%)",
+      "Abnormal Volume Spike (4.1x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-10-11",
+    "close": 159.41,
+    "open": 150.14,
+    "high": 161.11,
+    "low": 150.0,
+    "volume": 26071776,
+    "daily_return_pct": 7.19,
+    "reasons": [
+      "Extreme Rally (+7.19%)",
+      "Abnormal Volume Spike (3.4x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-10-26",
+    "close": 151.55,
+    "open": 143.33,
+    "high": 153.33,
+    "low": 143.33,
+    "volume": 6397272,
+    "daily_return_pct": 6.69,
+    "reasons": [
+      "Extreme Rally (+6.69%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-11-15",
+    "close": 165.64,
+    "open": 159.33,
+    "high": 169.44,
+    "low": 159.33,
+    "volume": 22166001,
+    "daily_return_pct": 5.18,
+    "reasons": [
+      "Extreme Rally (+5.18%)",
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-11-16",
+    "close": 173.12,
+    "open": 166.88,
+    "high": 174.22,
+    "low": 166.88,
+    "volume": 17690328,
+    "daily_return_pct": 4.52,
+    "reasons": [
+      "Extreme Rally (+4.52%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-11-22",
+    "close": 170.47,
+    "open": 181.33,
+    "high": 182.22,
+    "low": 165.01,
+    "volume": 15822225,
+    "daily_return_pct": -4.32,
+    "reasons": [
+      "Severe Drop (-4.32%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-11-26",
+    "close": 168.71,
+    "open": 174.44,
+    "high": 175.98,
+    "low": 167.22,
+    "volume": 7411725,
+    "daily_return_pct": -5.05,
+    "reasons": [
+      "Severe Drop (-5.05%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-12-01",
+    "close": 183.54,
+    "open": 174.67,
+    "high": 186.11,
+    "low": 172.4,
+    "volume": 22664061,
+    "daily_return_pct": 5.9,
+    "reasons": [
+      "Extreme Rally (+5.90%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-12-02",
+    "close": 211.0,
+    "open": 186.0,
+    "high": 215.44,
+    "low": 183.56,
+    "volume": 62825058,
+    "daily_return_pct": 14.96,
+    "reasons": [
+      "Extreme Rally (+14.96%)",
+      "Abnormal Volume Spike (6.3x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-12-03",
+    "close": 208.62,
+    "open": 212.89,
+    "high": 216.41,
+    "low": 204.44,
+    "volume": 40485087,
+    "daily_return_pct": -1.13,
+    "reasons": [
+      "Abnormal Volume Spike (3.6x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2021-12-07",
+    "close": 216.12,
+    "open": 209.18,
+    "high": 218.89,
+    "low": 206.56,
+    "volume": 17859528,
+    "daily_return_pct": 5.23,
+    "reasons": [
+      "Extreme Rally (+5.23%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-12-08",
+    "close": 228.55,
+    "open": 219.89,
+    "high": 234.33,
+    "low": 218.11,
+    "volume": 40911408,
+    "daily_return_pct": 5.75,
+    "reasons": [
+      "Extreme Rally (+5.75%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-12-14",
+    "close": 254.59,
+    "open": 232.22,
+    "high": 258.11,
+    "low": 231.67,
+    "volume": 38195784,
+    "daily_return_pct": 8.5,
+    "reasons": [
+      "Extreme Rally (+8.50%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2021-12-16",
+    "close": 234.28,
+    "open": 246.89,
+    "high": 248.88,
+    "low": 232.09,
+    "volume": 16864524,
+    "daily_return_pct": -5.14,
+    "reasons": [
+      "Severe Drop (-5.14%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-12-17",
+    "close": 217.58,
+    "open": 233.33,
+    "high": 234.85,
+    "low": 215.83,
+    "volume": 14297877,
+    "daily_return_pct": -7.13,
+    "reasons": [
+      "Severe Drop (-7.13%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2021-12-28",
+    "close": 214.89,
+    "open": 222.22,
+    "high": 225.33,
+    "low": 213.03,
+    "volume": 18601326,
+    "daily_return_pct": 5.38,
+    "reasons": [
+      "Extreme Rally (+5.38%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-01-19",
+    "close": 236.1,
+    "open": 224.56,
+    "high": 238.33,
+    "low": 221.78,
+    "volume": 17419707,
+    "daily_return_pct": 5.18,
+    "reasons": [
+      "Extreme Rally (+5.18%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-01-21",
+    "close": 228.88,
+    "open": 237.54,
+    "high": 243.87,
+    "low": 226.42,
+    "volume": 16011225,
+    "daily_return_pct": -4.89,
+    "reasons": [
+      "Severe Drop (-4.89%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-01-24",
+    "close": 217.4,
+    "open": 228.67,
+    "high": 230.18,
+    "low": 213.89,
+    "volume": 11302407,
+    "daily_return_pct": -5.02,
+    "reasons": [
+      "Severe Drop (-5.02%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-02-03",
+    "close": 243.55,
+    "open": 231.11,
+    "high": 246.56,
+    "low": 230.89,
+    "volume": 22956201,
+    "daily_return_pct": 5.48,
+    "reasons": [
+      "Extreme Rally (+5.48%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-02-07",
+    "close": 237.36,
+    "open": 247.22,
+    "high": 247.22,
+    "low": 234.32,
+    "volume": 10955826,
+    "daily_return_pct": -3.77,
+    "reasons": [
+      "Severe Drop (-3.77%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-02-09",
+    "close": 248.33,
+    "open": 232.22,
+    "high": 254.43,
+    "low": 223.89,
+    "volume": 47493864,
+    "daily_return_pct": 7.58,
+    "reasons": [
+      "Extreme Rally (+7.58%)",
+      "Abnormal Volume Spike (4.3x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-02-14",
+    "close": 238.29,
+    "open": 248.89,
+    "high": 249.51,
+    "low": 235.57,
+    "volume": 11149164,
+    "daily_return_pct": -5.58,
+    "reasons": [
+      "Severe Drop (-5.58%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-02-21",
+    "close": 240.41,
+    "open": 250.89,
+    "high": 250.89,
+    "low": 239.0,
+    "volume": 11159685,
+    "daily_return_pct": -4.38,
+    "reasons": [
+      "Severe Drop (-4.38%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-02-22",
+    "close": 229.36,
+    "open": 227.39,
+    "high": 234.44,
+    "low": 225.56,
+    "volume": 10089477,
+    "daily_return_pct": -4.6,
+    "reasons": [
+      "Severe Drop (-4.60%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-02-24",
+    "close": 208.32,
+    "open": 221.0,
+    "high": 223.33,
+    "low": 206.54,
+    "volume": 18210141,
+    "daily_return_pct": -9.77,
+    "reasons": [
+      "Severe Drop (-9.77%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-03-10",
+    "close": 291.05,
+    "open": 253.11,
+    "high": 294.49,
+    "low": 251.67,
+    "volume": 65631258,
+    "daily_return_pct": 18.6,
+    "reasons": [
+      "Extreme Rally (+18.60%)",
+      "Abnormal Volume Spike (4.6x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-03-11",
+    "close": 299.03,
+    "open": 297.22,
+    "high": 318.67,
+    "low": 295.41,
+    "volume": 87032268,
+    "daily_return_pct": 2.74,
+    "reasons": [
+      "Abnormal Volume Spike (5.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2022-03-14",
+    "close": 336.72,
+    "open": 300.67,
+    "high": 346.0,
+    "low": 299.46,
+    "volume": 68063517,
+    "daily_return_pct": 12.6,
+    "reasons": [
+      "Extreme Rally (+12.60%)",
+      "Abnormal Volume Spike (3.6x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-03-17",
+    "close": 314.07,
+    "open": 331.11,
+    "high": 334.01,
+    "low": 308.95,
+    "volume": 22806297,
+    "daily_return_pct": -4.65,
+    "reasons": [
+      "Severe Drop (-4.65%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-03-25",
+    "close": 295.32,
+    "open": 312.43,
+    "high": 313.33,
+    "low": 293.93,
+    "volume": 4445568,
+    "daily_return_pct": -5.0,
+    "reasons": [
+      "Severe Drop (-5.00%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-03-30",
+    "close": 314.65,
+    "open": 302.9,
+    "high": 319.67,
+    "low": 300.0,
+    "volume": 4573713,
+    "daily_return_pct": 5.14,
+    "reasons": [
+      "Extreme Rally (+5.14%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-04-29",
+    "close": 299.85,
+    "open": 292.4,
+    "high": 308.0,
+    "low": 290.67,
+    "volume": 15336075,
+    "daily_return_pct": 4.71,
+    "reasons": [
+      "Extreme Rally (+4.71%)",
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-05-04",
+    "close": 282.73,
+    "open": 299.1,
+    "high": 301.33,
+    "low": 280.0,
+    "volume": 3527298,
+    "daily_return_pct": -4.76,
+    "reasons": [
+      "Severe Drop (-4.76%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-05-09",
+    "close": 259.25,
+    "open": 273.95,
+    "high": 274.47,
+    "low": 257.03,
+    "volume": 3903120,
+    "daily_return_pct": -5.54,
+    "reasons": [
+      "Severe Drop (-5.54%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-05-11",
+    "close": 239.1,
+    "open": 252.53,
+    "high": 256.1,
+    "low": 232.85,
+    "volume": 4704357,
+    "daily_return_pct": -4.85,
+    "reasons": [
+      "Severe Drop (-4.85%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-05-19",
+    "close": 241.1,
+    "open": 243.33,
+    "high": 246.48,
+    "low": 239.93,
+    "volume": 2322345,
+    "daily_return_pct": -4.64,
+    "reasons": [
+      "Severe Drop (-4.64%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-05-31",
+    "close": 251.95,
+    "open": 231.33,
+    "high": 252.63,
+    "low": 229.62,
+    "volume": 9407385,
+    "daily_return_pct": 9.7,
+    "reasons": [
+      "Extreme Rally (+9.70%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-06-13",
+    "close": 227.5,
+    "open": 233.28,
+    "high": 235.58,
+    "low": 221.33,
+    "volume": 2780718,
+    "daily_return_pct": -4.42,
+    "reasons": [
+      "Severe Drop (-4.42%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-06-16",
+    "close": 208.68,
+    "open": 227.9,
+    "high": 229.2,
+    "low": 206.67,
+    "volume": 5220966,
+    "daily_return_pct": -6.91,
+    "reasons": [
+      "Severe Drop (-6.91%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-06-17",
+    "close": 194.73,
+    "open": 208.0,
+    "high": 208.82,
+    "low": 190.8,
+    "volume": 7482222,
+    "daily_return_pct": -6.68,
+    "reasons": [
+      "Severe Drop (-6.68%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-06-20",
+    "close": 184.6,
+    "open": 194.67,
+    "high": 196.55,
+    "low": 183.0,
+    "volume": 5723601,
+    "daily_return_pct": -5.2,
+    "reasons": [
+      "Severe Drop (-5.20%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-06-21",
+    "close": 205.52,
+    "open": 186.67,
+    "high": 208.33,
+    "low": 186.67,
+    "volume": 13124043,
+    "daily_return_pct": 11.33,
+    "reasons": [
+      "Extreme Rally (+11.33%)",
+      "Abnormal Volume Spike (3.3x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-07-07",
+    "close": 214.92,
+    "open": 205.67,
+    "high": 216.6,
+    "low": 203.7,
+    "volume": 8559465,
+    "daily_return_pct": 5.54,
+    "reasons": [
+      "Extreme Rally (+5.54%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-09-07",
+    "close": 230.4,
+    "open": 224.33,
+    "high": 234.6,
+    "low": 223.38,
+    "volume": 10489083,
+    "daily_return_pct": 2.21,
+    "reasons": [
+      "Abnormal Volume Spike (3.3x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2022-09-26",
+    "close": 202.27,
+    "open": 208.33,
+    "high": 209.6,
+    "low": 201.12,
+    "volume": 2427681,
+    "daily_return_pct": -3.99,
+    "reasons": [
+      "Severe Drop (-3.99%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2022-10-25",
+    "close": 203.72,
+    "open": 197.17,
+    "high": 205.9,
+    "low": 194.58,
+    "volume": 4389336,
+    "daily_return_pct": 4.79,
+    "reasons": [
+      "Extreme Rally (+4.79%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2022-12-13",
+    "close": 195.35,
+    "open": 189.82,
+    "high": 198.78,
+    "low": 189.33,
+    "volume": 6267741,
+    "daily_return_pct": 3.29,
+    "reasons": [
+      "Abnormal Volume Spike (3.4x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2022-12-23",
+    "close": 175.42,
+    "open": 181.67,
+    "high": 182.53,
+    "low": 175.0,
+    "volume": 2123238,
+    "daily_return_pct": -4.21,
+    "reasons": [
+      "Severe Drop (-4.21%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2023-03-06",
+    "close": 160.3,
+    "open": 151.45,
+    "high": 162.88,
+    "low": 150.82,
+    "volume": 8114991,
+    "daily_return_pct": 7.26,
+    "reasons": [
+      "Extreme Rally (+7.26%)",
+      "Abnormal Volume Spike (4.3x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-04-25",
+    "close": 164.9,
+    "open": 153.0,
+    "high": 166.27,
+    "low": 152.83,
+    "volume": 14896824,
+    "daily_return_pct": 8.02,
+    "reasons": [
+      "Extreme Rally (+8.02%)",
+      "Abnormal Volume Spike (6.3x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-04-26",
+    "close": 166.42,
+    "open": 166.67,
+    "high": 169.83,
+    "low": 164.48,
+    "volume": 7822629,
+    "daily_return_pct": 0.92,
+    "reasons": [
+      "Abnormal Volume Spike (3.1x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2023-04-27",
+    "close": 173.58,
+    "open": 166.47,
+    "high": 174.63,
+    "low": 166.3,
+    "volume": 9996030,
+    "daily_return_pct": 4.3,
+    "reasons": [
+      "Abnormal Volume Spike (3.5x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2023-05-08",
+    "close": 178.62,
+    "open": 170.6,
+    "high": 180.0,
+    "low": 170.33,
+    "volume": 4579413,
+    "daily_return_pct": 5.05,
+    "reasons": [
+      "Extreme Rally (+5.05%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-06-22",
+    "close": 201.08,
+    "open": 195.33,
+    "high": 203.77,
+    "low": 195.08,
+    "volume": 20677539,
+    "daily_return_pct": 5.43,
+    "reasons": [
+      "Extreme Rally (+5.43%)",
+      "Abnormal Volume Spike (6.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-06-23",
+    "close": 202.85,
+    "open": 201.32,
+    "high": 206.65,
+    "low": 198.67,
+    "volume": 11739270,
+    "daily_return_pct": 0.88,
+    "reasons": [
+      "Abnormal Volume Spike (3.8x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2023-07-03",
+    "close": 223.13,
+    "open": 203.93,
+    "high": 225.0,
+    "low": 203.92,
+    "volume": 30464100,
+    "daily_return_pct": 10.0,
+    "reasons": [
+      "Extreme Rally (+10.00%)",
+      "Abnormal Volume Spike (6.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-07-04",
+    "close": 224.27,
+    "open": 224.17,
+    "high": 228.33,
+    "low": 220.67,
+    "volume": 15451302,
+    "daily_return_pct": 0.51,
+    "reasons": [
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2023-07-06",
+    "close": 235.17,
+    "open": 227.67,
+    "high": 236.88,
+    "low": 223.83,
+    "volume": 29480988,
+    "daily_return_pct": 3.7,
+    "reasons": [
+      "Abnormal Volume Spike (4.9x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2023-07-12",
+    "close": 251.87,
+    "open": 234.32,
+    "high": 262.65,
+    "low": 234.0,
+    "volume": 29897934,
+    "daily_return_pct": 7.93,
+    "reasons": [
+      "Extreme Rally (+7.93%)",
+      "Abnormal Volume Spike (4.0x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-08-09",
+    "close": 307.8,
+    "open": 295.22,
+    "high": 309.0,
+    "low": 294.55,
+    "volume": 14201859,
+    "daily_return_pct": 4.62,
+    "reasons": [
+      "Extreme Rally (+4.62%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-08-16",
+    "close": 279.95,
+    "open": 289.97,
+    "high": 289.97,
+    "low": 278.5,
+    "volume": 5116170,
+    "daily_return_pct": -4.56,
+    "reasons": [
+      "Severe Drop (-4.56%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2023-08-30",
+    "close": 322.6,
+    "open": 304.97,
+    "high": 329.67,
+    "low": 302.82,
+    "volume": 18709323,
+    "daily_return_pct": 6.36,
+    "reasons": [
+      "Extreme Rally (+6.36%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-08-31",
+    "close": 354.25,
+    "open": 321.0,
+    "high": 361.63,
+    "low": 317.53,
+    "volume": 30959808,
+    "daily_return_pct": 9.81,
+    "reasons": [
+      "Extreme Rally (+9.81%)",
+      "Abnormal Volume Spike (4.3x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-09-01",
+    "close": 375.38,
+    "open": 355.43,
+    "high": 379.6,
+    "low": 341.33,
+    "volume": 30099873,
+    "daily_return_pct": 5.96,
+    "reasons": [
+      "Extreme Rally (+5.96%)",
+      "Abnormal Volume Spike (3.7x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-09-04",
+    "close": 396.08,
+    "open": 370.83,
+    "high": 401.02,
+    "low": 361.87,
+    "volume": 22214028,
+    "daily_return_pct": 5.51,
+    "reasons": [
+      "Extreme Rally (+5.51%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-09-08",
+    "close": 441.48,
+    "open": 420.0,
+    "high": 449.33,
+    "low": 418.33,
+    "volume": 8503326,
+    "daily_return_pct": 5.83,
+    "reasons": [
+      "Extreme Rally (+5.83%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-09-12",
+    "close": 432.68,
+    "open": 457.33,
+    "high": 460.93,
+    "low": 410.97,
+    "volume": 10707696,
+    "daily_return_pct": -5.19,
+    "reasons": [
+      "Severe Drop (-5.19%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2023-09-20",
+    "close": 400.5,
+    "open": 414.67,
+    "high": 417.87,
+    "low": 392.02,
+    "volume": 4585101,
+    "daily_return_pct": -3.6,
+    "reasons": [
+      "Severe Drop (-3.60%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2023-09-26",
+    "close": 425.73,
+    "open": 404.23,
+    "high": 429.02,
+    "low": 400.18,
+    "volume": 6658155,
+    "daily_return_pct": 5.82,
+    "reasons": [
+      "Extreme Rally (+5.82%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-10-06",
+    "close": 467.17,
+    "open": 444.4,
+    "high": 473.0,
+    "low": 444.0,
+    "volume": 9082923,
+    "daily_return_pct": 5.69,
+    "reasons": [
+      "Extreme Rally (+5.69%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-10-23",
+    "close": 569.05,
+    "open": 546.67,
+    "high": 599.33,
+    "low": 544.27,
+    "volume": 21342201,
+    "daily_return_pct": 7.52,
+    "reasons": [
+      "Extreme Rally (+7.52%)",
+      "Abnormal Volume Spike (3.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-10-25",
+    "close": 596.23,
+    "open": 583.33,
+    "high": 609.33,
+    "low": 565.03,
+    "volume": 14478069,
+    "daily_return_pct": 4.78,
+    "reasons": [
+      "Extreme Rally (+4.78%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-10-26",
+    "close": 599.73,
+    "open": 590.0,
+    "high": 609.92,
+    "low": 528.72,
+    "volume": 19530813,
+    "daily_return_pct": 0.59,
+    "reasons": [
+      "Abnormal Volume Spike (3.3x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2023-11-01",
+    "close": 598.2,
+    "open": 626.0,
+    "high": 630.0,
+    "low": 593.9,
+    "volume": 5317038,
+    "daily_return_pct": -3.67,
+    "reasons": [
+      "Severe Drop (-3.67%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2023-11-07",
+    "close": 672.02,
+    "open": 622.63,
+    "high": 677.12,
+    "low": 616.67,
+    "volume": 12124032,
+    "daily_return_pct": 8.2,
+    "reasons": [
+      "Extreme Rally (+8.20%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-11-09",
+    "close": 654.48,
+    "open": 690.0,
+    "high": 690.67,
+    "low": 650.37,
+    "volume": 5069688,
+    "daily_return_pct": -5.18,
+    "reasons": [
+      "Severe Drop (-5.18%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2023-11-12",
+    "close": 708.68,
+    "open": 700.67,
+    "high": 722.83,
+    "low": 700.0,
+    "volume": 4699875,
+    "daily_return_pct": 5.73,
+    "reasons": [
+      "Extreme Rally (+5.73%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-11-13",
+    "close": 773.97,
+    "open": 711.6,
+    "high": 783.33,
+    "low": 703.33,
+    "volume": 14338647,
+    "daily_return_pct": 9.21,
+    "reasons": [
+      "Extreme Rally (+9.21%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-11-20",
+    "close": 754.33,
+    "open": 816.37,
+    "high": 825.0,
+    "low": 750.02,
+    "volume": 7385322,
+    "daily_return_pct": -6.15,
+    "reasons": [
+      "Severe Drop (-6.15%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2023-11-21",
+    "close": 716.48,
+    "open": 766.67,
+    "high": 781.65,
+    "low": 712.67,
+    "volume": 8604531,
+    "daily_return_pct": -5.02,
+    "reasons": [
+      "Severe Drop (-5.02%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2023-11-28",
+    "close": 782.92,
+    "open": 748.33,
+    "high": 789.97,
+    "low": 748.33,
+    "volume": 8860251,
+    "daily_return_pct": 8.2,
+    "reasons": [
+      "Extreme Rally (+8.20%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2023-12-20",
+    "close": 770.58,
+    "open": 803.67,
+    "high": 822.67,
+    "low": 758.33,
+    "volume": 4709628,
+    "daily_return_pct": -3.69,
+    "reasons": [
+      "Severe Drop (-3.69%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-01-23",
+    "close": 703.75,
+    "open": 748.0,
+    "high": 751.33,
+    "low": 700.0,
+    "volume": 2791503,
+    "daily_return_pct": -5.8,
+    "reasons": [
+      "Severe Drop (-5.80%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-01-31",
+    "close": 774.53,
+    "open": 736.4,
+    "high": 780.95,
+    "low": 728.33,
+    "volume": 3281166,
+    "daily_return_pct": 6.21,
+    "reasons": [
+      "Extreme Rally (+6.21%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-02-01",
+    "close": 831.15,
+    "open": 780.9,
+    "high": 836.0,
+    "low": 780.0,
+    "volume": 7848948,
+    "daily_return_pct": 7.31,
+    "reasons": [
+      "Extreme Rally (+7.31%)",
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-02-06",
+    "close": 823.12,
+    "open": 853.0,
+    "high": 853.0,
+    "low": 793.47,
+    "volume": 4928013,
+    "daily_return_pct": -3.58,
+    "reasons": [
+      "Severe Drop (-3.58%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-02-12",
+    "close": 787.42,
+    "open": 833.33,
+    "high": 835.1,
+    "low": 775.07,
+    "volume": 1643832,
+    "daily_return_pct": -5.12,
+    "reasons": [
+      "Severe Drop (-5.12%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-02-21",
+    "close": 738.73,
+    "open": 769.33,
+    "high": 770.3,
+    "low": 730.0,
+    "volume": 1678551,
+    "daily_return_pct": -3.52,
+    "reasons": [
+      "Severe Drop (-3.52%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-02-27",
+    "close": 798.7,
+    "open": 763.55,
+    "high": 803.03,
+    "low": 760.0,
+    "volume": 3614343,
+    "daily_return_pct": 5.14,
+    "reasons": [
+      "Extreme Rally (+5.14%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-03-13",
+    "close": 670.57,
+    "open": 746.67,
+    "high": 756.67,
+    "low": 657.48,
+    "volume": 4970817,
+    "daily_return_pct": -6.37,
+    "reasons": [
+      "Severe Drop (-6.37%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-03-19",
+    "close": 652.22,
+    "open": 680.0,
+    "high": 682.0,
+    "low": 647.02,
+    "volume": 2106249,
+    "daily_return_pct": -3.87,
+    "reasons": [
+      "Severe Drop (-3.87%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-03-21",
+    "close": 747.7,
+    "open": 695.33,
+    "high": 755.73,
+    "low": 691.68,
+    "volume": 6039216,
+    "daily_return_pct": 10.33,
+    "reasons": [
+      "Extreme Rally (+10.33%)",
+      "Abnormal Volume Spike (3.0x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-03-26",
+    "close": 770.07,
+    "open": 741.33,
+    "high": 775.0,
+    "low": 738.33,
+    "volume": 3695259,
+    "daily_return_pct": 5.11,
+    "reasons": [
+      "Extreme Rally (+5.11%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-03-27",
+    "close": 821.2,
+    "open": 777.33,
+    "high": 825.13,
+    "low": 772.33,
+    "volume": 6939876,
+    "daily_return_pct": 6.64,
+    "reasons": [
+      "Extreme Rally (+6.64%)",
+      "Abnormal Volume Spike (3.1x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-04-01",
+    "close": 903.3,
+    "open": 852.47,
+    "high": 908.0,
+    "low": 843.33,
+    "volume": 9280776,
+    "daily_return_pct": 7.71,
+    "reasons": [
+      "Extreme Rally (+7.71%)",
+      "Abnormal Volume Spike (3.5x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-04-23",
+    "close": 1066.62,
+    "open": 957.43,
+    "high": 1082.47,
+    "low": 956.67,
+    "volume": 12193113,
+    "daily_return_pct": 12.22,
+    "reasons": [
+      "Extreme Rally (+12.22%)",
+      "Abnormal Volume Spike (3.3x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-04-29",
+    "close": 923.75,
+    "open": 909.48,
+    "high": 964.98,
+    "low": 870.7,
+    "volume": 33735531,
+    "daily_return_pct": -13.68,
+    "reasons": [
+      "Severe Drop (-13.68%)",
+      "Abnormal Volume Spike (6.9x avg)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-05-09",
+    "close": 903.38,
+    "open": 930.33,
+    "high": 961.67,
+    "low": 900.0,
+    "volume": 3470535,
+    "daily_return_pct": -3.88,
+    "reasons": [
+      "Severe Drop (-3.88%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-05-15",
+    "close": 946.97,
+    "open": 905.77,
+    "high": 956.33,
+    "low": 904.92,
+    "volume": 4480512,
+    "daily_return_pct": 5.9,
+    "reasons": [
+      "Extreme Rally (+5.90%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-05-31",
+    "close": 897.95,
+    "open": 857.48,
+    "high": 901.67,
+    "low": 836.47,
+    "volume": 3787668,
+    "daily_return_pct": 5.44,
+    "reasons": [
+      "Extreme Rally (+5.44%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-06-04",
+    "close": 852.33,
+    "open": 900.0,
+    "high": 900.33,
+    "low": 808.33,
+    "volume": 5349744,
+    "daily_return_pct": -5.57,
+    "reasons": [
+      "Severe Drop (-5.57%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-07-10",
+    "close": 751.42,
+    "open": 777.0,
+    "high": 794.67,
+    "low": 748.33,
+    "volume": 6903681,
+    "daily_return_pct": -3.52,
+    "reasons": [
+      "Severe Drop (-3.52%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-07-24",
+    "close": 804.5,
+    "open": 748.33,
+    "high": 811.67,
+    "low": 747.87,
+    "volume": 6467664,
+    "daily_return_pct": 8.41,
+    "reasons": [
+      "Extreme Rally (+8.41%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-07-31",
+    "close": 852.15,
+    "open": 791.7,
+    "high": 869.23,
+    "low": 791.33,
+    "volume": 10280913,
+    "daily_return_pct": 5.98,
+    "reasons": [
+      "Extreme Rally (+5.98%)",
+      "Abnormal Volume Spike (3.5x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-08-05",
+    "close": 795.87,
+    "open": 814.67,
+    "high": 829.53,
+    "low": 780.0,
+    "volume": 4511538,
+    "daily_return_pct": -6.87,
+    "reasons": [
+      "Severe Drop (-6.87%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-08-08",
+    "close": 866.6,
+    "open": 885.67,
+    "high": 885.67,
+    "low": 843.33,
+    "volume": 10929666,
+    "daily_return_pct": 8.39,
+    "reasons": [
+      "Extreme Rally (+8.39%)",
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-09-05",
+    "close": 963.53,
+    "open": 922.67,
+    "high": 965.0,
+    "low": 922.67,
+    "volume": 4593615,
+    "daily_return_pct": 4.72,
+    "reasons": [
+      "Extreme Rally (+4.72%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-09-16",
+    "close": 1143.93,
+    "open": 986.67,
+    "high": 1153.0,
+    "low": 985.0,
+    "volume": 31976859,
+    "daily_return_pct": 18.23,
+    "reasons": [
+      "Extreme Rally (+18.23%)",
+      "Abnormal Volume Spike (8.4x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-09-17",
+    "close": 1111.23,
+    "open": 1140.0,
+    "high": 1185.67,
+    "low": 1105.0,
+    "volume": 12246828,
+    "daily_return_pct": -2.86,
+    "reasons": [
+      "Abnormal Volume Spike (3.0x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2024-09-18",
+    "close": 1298.72,
+    "open": 1116.0,
+    "high": 1315.0,
+    "low": 1115.0,
+    "volume": 46895184,
+    "daily_return_pct": 16.87,
+    "reasons": [
+      "Extreme Rally (+16.87%)",
+      "Abnormal Volume Spike (8.5x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-09-19",
+    "close": 1237.07,
+    "open": 1298.67,
+    "high": 1298.67,
+    "low": 1191.98,
+    "volume": 18736551,
+    "daily_return_pct": -4.75,
+    "reasons": [
+      "Severe Drop (-4.75%)",
+      "Abnormal Volume Spike (3.1x avg)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-09-20",
+    "close": 1328.32,
+    "open": 1245.0,
+    "high": 1350.0,
+    "low": 1226.35,
+    "volume": 20518782,
+    "daily_return_pct": 7.38,
+    "reasons": [
+      "Extreme Rally (+7.38%)",
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-09-25",
+    "close": 1279.28,
+    "open": 1331.0,
+    "high": 1334.33,
+    "low": 1275.37,
+    "volume": 4750377,
+    "daily_return_pct": -3.58,
+    "reasons": [
+      "Severe Drop (-3.58%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-10-01",
+    "close": 1286.3,
+    "open": 1248.33,
+    "high": 1306.67,
+    "low": 1230.03,
+    "volume": 10898970,
+    "daily_return_pct": 4.73,
+    "reasons": [
+      "Extreme Rally (+4.73%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-10-03",
+    "close": 1317.87,
+    "open": 1266.67,
+    "high": 1411.67,
+    "low": 1248.35,
+    "volume": 33666390,
+    "daily_return_pct": 2.45,
+    "reasons": [
+      "Abnormal Volume Spike (3.9x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2024-10-07",
+    "close": 1275.48,
+    "open": 1396.67,
+    "high": 1420.0,
+    "low": 1260.35,
+    "volume": 18471468,
+    "daily_return_pct": -6.86,
+    "reasons": [
+      "Severe Drop (-6.86%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-10-08",
+    "close": 1414.22,
+    "open": 1287.95,
+    "high": 1425.0,
+    "low": 1277.05,
+    "volume": 21072588,
+    "daily_return_pct": 10.88,
+    "reasons": [
+      "Extreme Rally (+10.88%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-10-11",
+    "close": 1498.82,
+    "open": 1421.67,
+    "high": 1516.67,
+    "low": 1416.23,
+    "volume": 19460430,
+    "daily_return_pct": 6.65,
+    "reasons": [
+      "Extreme Rally (+6.65%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-10-14",
+    "close": 1603.17,
+    "open": 1512.0,
+    "high": 1663.27,
+    "low": 1511.98,
+    "volume": 38131941,
+    "daily_return_pct": 6.96,
+    "reasons": [
+      "Extreme Rally (+6.96%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-10-16",
+    "close": 1507.28,
+    "open": 1525.0,
+    "high": 1541.67,
+    "low": 1473.3,
+    "volume": 18922134,
+    "daily_return_pct": -4.85,
+    "reasons": [
+      "Severe Drop (-4.85%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-10-17",
+    "close": 1419.18,
+    "open": 1509.52,
+    "high": 1518.93,
+    "low": 1400.0,
+    "volume": 10883109,
+    "daily_return_pct": -5.84,
+    "reasons": [
+      "Severe Drop (-5.84%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-10-22",
+    "close": 1363.42,
+    "open": 1453.33,
+    "high": 1454.67,
+    "low": 1350.37,
+    "volume": 8449722,
+    "daily_return_pct": -5.63,
+    "reasons": [
+      "Severe Drop (-5.63%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-10-25",
+    "close": 1354.25,
+    "open": 1441.63,
+    "high": 1441.63,
+    "low": 1331.22,
+    "volume": 7136559,
+    "daily_return_pct": -6.06,
+    "reasons": [
+      "Severe Drop (-6.06%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-11-08",
+    "close": 1564.63,
+    "open": 1634.67,
+    "high": 1656.33,
+    "low": 1550.1,
+    "volume": 9576687,
+    "daily_return_pct": -3.66,
+    "reasons": [
+      "Severe Drop (-3.66%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-11-13",
+    "close": 1497.27,
+    "open": 1579.18,
+    "high": 1596.33,
+    "low": 1483.9,
+    "volume": 10943595,
+    "daily_return_pct": -3.98,
+    "reasons": [
+      "Severe Drop (-3.98%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-11-25",
+    "close": 1562.27,
+    "open": 1613.33,
+    "high": 1651.67,
+    "low": 1529.05,
+    "volume": 36848079,
+    "daily_return_pct": -0.7,
+    "reasons": [
+      "Abnormal Volume Spike (3.4x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2024-11-26",
+    "close": 1477.03,
+    "open": 1532.67,
+    "high": 1553.0,
+    "low": 1464.0,
+    "volume": 13147269,
+    "daily_return_pct": -5.46,
+    "reasons": [
+      "Severe Drop (-5.46%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2024-12-05",
+    "close": 1731.63,
+    "open": 1533.0,
+    "high": 1750.0,
+    "low": 1530.5,
+    "volume": 35839431,
+    "daily_return_pct": 13.62,
+    "reasons": [
+      "Extreme Rally (+13.62%)",
+      "Abnormal Volume Spike (3.9x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2024-12-20",
+    "close": 1847.62,
+    "open": 1940.33,
+    "high": 1945.98,
+    "low": 1837.42,
+    "volume": 4851843,
+    "daily_return_pct": -4.29,
+    "reasons": [
+      "Severe Drop (-4.29%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-01-06",
+    "close": 1696.33,
+    "open": 1783.33,
+    "high": 1792.5,
+    "low": 1684.98,
+    "volume": 3817821,
+    "daily_return_pct": -4.7,
+    "reasons": [
+      "Severe Drop (-4.70%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-01-07",
+    "close": 1796.1,
+    "open": 1696.67,
+    "high": 1821.67,
+    "low": 1696.67,
+    "volume": 6021834,
+    "daily_return_pct": 5.88,
+    "reasons": [
+      "Extreme Rally (+5.88%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-01-09",
+    "close": 1735.08,
+    "open": 1800.13,
+    "high": 1809.67,
+    "low": 1730.35,
+    "volume": 2893500,
+    "daily_return_pct": -3.61,
+    "reasons": [
+      "Severe Drop (-3.61%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-01-14",
+    "close": 1816.28,
+    "open": 1758.33,
+    "high": 1832.63,
+    "low": 1734.02,
+    "volume": 7227348,
+    "daily_return_pct": 5.67,
+    "reasons": [
+      "Extreme Rally (+5.67%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-01-15",
+    "close": 1928.67,
+    "open": 1850.0,
+    "high": 1936.33,
+    "low": 1850.0,
+    "volume": 10900698,
+    "daily_return_pct": 6.19,
+    "reasons": [
+      "Extreme Rally (+6.19%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-01-27",
+    "close": 1813.72,
+    "open": 1903.0,
+    "high": 1921.1,
+    "low": 1790.33,
+    "volume": 6137661,
+    "daily_return_pct": -6.76,
+    "reasons": [
+      "Severe Drop (-6.76%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-01-28",
+    "close": 1718.92,
+    "open": 1813.72,
+    "high": 1829.33,
+    "low": 1710.55,
+    "volume": 8450283,
+    "daily_return_pct": -5.23,
+    "reasons": [
+      "Severe Drop (-5.23%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-02-05",
+    "close": 1944.37,
+    "open": 1872.82,
+    "high": 1951.67,
+    "low": 1856.67,
+    "volume": 6223398,
+    "daily_return_pct": 4.81,
+    "reasons": [
+      "Extreme Rally (+4.81%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-02-06",
+    "close": 1855.85,
+    "open": 1952.67,
+    "high": 1952.67,
+    "low": 1840.0,
+    "volume": 5869194,
+    "daily_return_pct": -4.55,
+    "reasons": [
+      "Severe Drop (-4.55%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-02-11",
+    "close": 1729.05,
+    "open": 1883.33,
+    "high": 1888.02,
+    "low": 1717.0,
+    "volume": 7226934,
+    "daily_return_pct": -7.86,
+    "reasons": [
+      "Severe Drop (-7.86%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-02-19",
+    "close": 1877.0,
+    "open": 1718.33,
+    "high": 1891.57,
+    "low": 1716.65,
+    "volume": 11830863,
+    "daily_return_pct": 8.58,
+    "reasons": [
+      "Extreme Rally (+8.58%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-02-20",
+    "close": 1986.38,
+    "open": 1895.67,
+    "high": 1994.33,
+    "low": 1868.17,
+    "volume": 14665710,
+    "daily_return_pct": 5.83,
+    "reasons": [
+      "Extreme Rally (+5.83%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-02-27",
+    "close": 1720.83,
+    "open": 1838.32,
+    "high": 1841.33,
+    "low": 1706.67,
+    "volume": 8244900,
+    "daily_return_pct": -6.17,
+    "reasons": [
+      "Severe Drop (-6.17%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-02-28",
+    "close": 1544.57,
+    "open": 1706.67,
+    "high": 1733.0,
+    "low": 1517.07,
+    "volume": 21537918,
+    "daily_return_pct": -10.24,
+    "reasons": [
+      "Severe Drop (-10.24%)",
+      "Abnormal Volume Spike (3.2x avg)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-03-03",
+    "close": 1453.15,
+    "open": 1538.33,
+    "high": 1538.33,
+    "low": 1447.88,
+    "volume": 19020465,
+    "daily_return_pct": -5.92,
+    "reasons": [
+      "Severe Drop (-5.92%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-03-05",
+    "close": 1433.03,
+    "open": 1433.33,
+    "high": 1457.55,
+    "low": 1345.03,
+    "volume": 32713731,
+    "daily_return_pct": -3.47,
+    "reasons": [
+      "Abnormal Volume Spike (3.8x avg)"
+    ],
+    "type": "Volume Shock"
+  },
+  {
+    "date": "2025-03-10",
+    "close": 1332.98,
+    "open": 1390.0,
+    "high": 1411.27,
+    "low": 1325.35,
+    "volume": 12517161,
+    "daily_return_pct": -4.29,
+    "reasons": [
+      "Severe Drop (-4.29%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-03-11",
+    "close": 1269.92,
+    "open": 1306.67,
+    "high": 1326.32,
+    "low": 1227.33,
+    "volume": 21787773,
+    "daily_return_pct": -4.73,
+    "reasons": [
+      "Severe Drop (-4.73%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-03-12",
+    "close": 1338.13,
+    "open": 1288.33,
+    "high": 1356.3,
+    "low": 1288.33,
+    "volume": 18983265,
+    "daily_return_pct": 5.37,
+    "reasons": [
+      "Extreme Rally (+5.37%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-03-18",
+    "close": 1382.23,
+    "open": 1336.0,
+    "high": 1389.32,
+    "low": 1326.67,
+    "volume": 9960255,
+    "daily_return_pct": 4.65,
+    "reasons": [
+      "Extreme Rally (+4.65%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-03-19",
+    "close": 1464.15,
+    "open": 1388.0,
+    "high": 1471.08,
+    "low": 1385.17,
+    "volume": 15512586,
+    "daily_return_pct": 5.93,
+    "reasons": [
+      "Extreme Rally (+5.93%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-03-21",
+    "close": 1593.25,
+    "open": 1496.33,
+    "high": 1616.67,
+    "low": 1485.03,
+    "volume": 21103122,
+    "daily_return_pct": 6.74,
+    "reasons": [
+      "Extreme Rally (+6.74%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-03-26",
+    "close": 1491.57,
+    "open": 1556.67,
+    "high": 1562.33,
+    "low": 1484.33,
+    "volume": 8879835,
+    "daily_return_pct": -3.8,
+    "reasons": [
+      "Severe Drop (-3.80%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-03-27",
+    "close": 1561.45,
+    "open": 1550.0,
+    "high": 1578.33,
+    "low": 1526.07,
+    "volume": 20801976,
+    "daily_return_pct": 4.68,
+    "reasons": [
+      "Extreme Rally (+4.68%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-03-28",
+    "close": 1826.6,
+    "open": 1666.67,
+    "high": 1844.8,
+    "low": 1666.67,
+    "volume": 56319333,
+    "daily_return_pct": 16.98,
+    "reasons": [
+      "Extreme Rally (+16.98%)",
+      "Abnormal Volume Spike (3.8x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-04-07",
+    "close": 1727.48,
+    "open": 1666.68,
+    "high": 1750.0,
+    "low": 1659.45,
+    "volume": 12643101,
+    "daily_return_pct": -6.07,
+    "reasons": [
+      "Severe Drop (-6.07%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-04-08",
+    "close": 1846.07,
+    "open": 1800.0,
+    "high": 1852.95,
+    "low": 1784.18,
+    "volume": 10422066,
+    "daily_return_pct": 6.86,
+    "reasons": [
+      "Extreme Rally (+6.86%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-04-15",
+    "close": 1986.0,
+    "open": 1917.0,
+    "high": 1991.67,
+    "low": 1907.0,
+    "volume": 7914093,
+    "daily_return_pct": 5.55,
+    "reasons": [
+      "Extreme Rally (+5.55%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-04-21",
+    "close": 2095.0,
+    "open": 1993.67,
+    "high": 2104.33,
+    "low": 1990.0,
+    "volume": 12255681,
+    "daily_return_pct": 5.97,
+    "reasons": [
+      "Extreme Rally (+5.97%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-04-30",
+    "close": 2119.67,
+    "open": 2223.33,
+    "high": 2223.33,
+    "low": 2107.5,
+    "volume": 7386837,
+    "daily_return_pct": -4.25,
+    "reasons": [
+      "Severe Drop (-4.25%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-05-07",
+    "close": 2217.5,
+    "open": 2123.33,
+    "high": 2282.5,
+    "low": 2117.5,
+    "volume": 32617395,
+    "daily_return_pct": 6.53,
+    "reasons": [
+      "Extreme Rally (+6.53%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-05-12",
+    "close": 2318.5,
+    "open": 2300.0,
+    "high": 2349.0,
+    "low": 2288.33,
+    "volume": 11883684,
+    "daily_return_pct": 5.84,
+    "reasons": [
+      "Extreme Rally (+5.84%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-05-13",
+    "close": 2438.5,
+    "open": 2333.33,
+    "high": 2448.67,
+    "low": 2327.17,
+    "volume": 16155834,
+    "daily_return_pct": 5.18,
+    "reasons": [
+      "Extreme Rally (+5.18%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-05-22",
+    "close": 2332.17,
+    "open": 2435.0,
+    "high": 2440.17,
+    "low": 2298.33,
+    "volume": 15080493,
+    "daily_return_pct": -4.22,
+    "reasons": [
+      "Severe Drop (-4.22%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-05-23",
+    "close": 2448.0,
+    "open": 2358.0,
+    "high": 2488.0,
+    "low": 2335.0,
+    "volume": 16556320,
+    "daily_return_pct": 4.97,
+    "reasons": [
+      "Extreme Rally (+4.97%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-05-30",
+    "close": 2674.0,
+    "open": 2472.5,
+    "high": 2690.0,
+    "low": 2469.0,
+    "volume": 18465797,
+    "daily_return_pct": 8.5,
+    "reasons": [
+      "Extreme Rally (+8.50%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-06-11",
+    "close": 2882.4,
+    "open": 3015.0,
+    "high": 3019.9,
+    "low": 2823.1,
+    "volume": 10665889,
+    "daily_return_pct": -4.09,
+    "reasons": [
+      "Severe Drop (-4.09%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-06-12",
+    "close": 2754.1,
+    "open": 2860.0,
+    "high": 2860.9,
+    "low": 2748.4,
+    "volume": 9601852,
+    "daily_return_pct": -4.45,
+    "reasons": [
+      "Severe Drop (-4.45%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-07-04",
+    "close": 2635.2,
+    "open": 2778.0,
+    "high": 2778.0,
+    "low": 2613.1,
+    "volume": 12917060,
+    "daily_return_pct": -6.56,
+    "reasons": [
+      "Severe Drop (-6.56%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-07-08",
+    "close": 2477.0,
+    "open": 2640.0,
+    "high": 2644.0,
+    "low": 2395.0,
+    "volume": 18415480,
+    "daily_return_pct": -6.04,
+    "reasons": [
+      "Severe Drop (-6.04%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-07-11",
+    "close": 2371.1,
+    "open": 2466.4,
+    "high": 2476.2,
+    "low": 2365.3,
+    "volume": 7117789,
+    "daily_return_pct": -3.86,
+    "reasons": [
+      "Severe Drop (-3.86%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-07-25",
+    "close": 2454.0,
+    "open": 2538.9,
+    "high": 2542.0,
+    "low": 2444.2,
+    "volume": 3588032,
+    "daily_return_pct": -3.68,
+    "reasons": [
+      "Severe Drop (-3.68%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-08-05",
+    "close": 2367.2,
+    "open": 2492.0,
+    "high": 2494.1,
+    "low": 2346.1,
+    "volume": 7032517,
+    "daily_return_pct": -4.8,
+    "reasons": [
+      "Severe Drop (-4.80%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-08-13",
+    "close": 2496.4,
+    "open": 2385.0,
+    "high": 2501.9,
+    "low": 2381.9,
+    "volume": 5393999,
+    "daily_return_pct": 5.39,
+    "reasons": [
+      "Extreme Rally (+5.39%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-08-21",
+    "close": 2332.2,
+    "open": 2524.0,
+    "high": 2529.8,
+    "low": 2325.0,
+    "volume": 12151255,
+    "daily_return_pct": -7.56,
+    "reasons": [
+      "Severe Drop (-7.56%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-08-29",
+    "close": 2096.2,
+    "open": 2180.0,
+    "high": 2184.0,
+    "low": 2090.0,
+    "volume": 8153679,
+    "daily_return_pct": -3.77,
+    "reasons": [
+      "Severe Drop (-3.77%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-09-05",
+    "close": 2319.6,
+    "open": 2229.0,
+    "high": 2347.9,
+    "low": 2227.0,
+    "volume": 7981732,
+    "daily_return_pct": 4.51,
+    "reasons": [
+      "Extreme Rally (+4.51%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-09-10",
+    "close": 2266.5,
+    "open": 2365.0,
+    "high": 2368.2,
+    "low": 2242.4,
+    "volume": 5226464,
+    "daily_return_pct": -3.68,
+    "reasons": [
+      "Severe Drop (-3.68%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-09-11",
+    "close": 2162.8,
+    "open": 2272.0,
+    "high": 2280.0,
+    "low": 2145.2,
+    "volume": 9464950,
+    "daily_return_pct": -4.58,
+    "reasons": [
+      "Severe Drop (-4.58%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-10-06",
+    "close": 2217.9,
+    "open": 2103.7,
+    "high": 2223.8,
+    "low": 2102.0,
+    "volume": 8546614,
+    "daily_return_pct": 5.95,
+    "reasons": [
+      "Extreme Rally (+5.95%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-10-28",
+    "close": 2419.7,
+    "open": 2511.0,
+    "high": 2513.2,
+    "low": 2405.0,
+    "volume": 5690046,
+    "daily_return_pct": -3.61,
+    "reasons": [
+      "Severe Drop (-3.61%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-11-07",
+    "close": 2678.3,
+    "open": 2450.0,
+    "high": 2718.7,
+    "low": 2443.2,
+    "volume": 20297200,
+    "daily_return_pct": 9.07,
+    "reasons": [
+      "Extreme Rally (+9.07%)",
+      "Abnormal Volume Spike (3.8x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-11-12",
+    "close": 2775.4,
+    "open": 2770.0,
+    "high": 2818.0,
+    "low": 2732.1,
+    "volume": 15966772,
+    "daily_return_pct": 4.96,
+    "reasons": [
+      "Extreme Rally (+4.96%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2025-12-10",
+    "close": 2581.7,
+    "open": 2715.8,
+    "high": 2718.5,
+    "low": 2575.0,
+    "volume": 4918417,
+    "daily_return_pct": -4.94,
+    "reasons": [
+      "Severe Drop (-4.94%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2025-12-11",
+    "close": 2698.8,
+    "open": 2595.0,
+    "high": 2706.7,
+    "low": 2585.0,
+    "volume": 5536101,
+    "daily_return_pct": 4.54,
+    "reasons": [
+      "Extreme Rally (+4.54%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-01-12",
+    "close": 2790.6,
+    "open": 2700.0,
+    "high": 2800.0,
+    "low": 2685.0,
+    "volume": 7690160,
+    "daily_return_pct": 4.54,
+    "reasons": [
+      "Extreme Rally (+4.54%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-02-01",
+    "close": 2578.1,
+    "open": 2800.0,
+    "high": 2800.0,
+    "low": 2377.4,
+    "volume": 16492708,
+    "daily_return_pct": -7.83,
+    "reasons": [
+      "Severe Drop (-7.83%)",
+      "Abnormal Volume Spike (4.0x avg)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2026-02-02",
+    "close": 2701.6,
+    "open": 2565.3,
+    "high": 2711.0,
+    "low": 2530.0,
+    "volume": 7053162,
+    "daily_return_pct": 4.79,
+    "reasons": [
+      "Extreme Rally (+4.79%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-02-03",
+    "close": 2860.8,
+    "open": 2850.0,
+    "high": 2929.2,
+    "low": 2793.8,
+    "volume": 6611608,
+    "daily_return_pct": 5.89,
+    "reasons": [
+      "Extreme Rally (+5.89%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-02-10",
+    "close": 3174.2,
+    "open": 3110.0,
+    "high": 3188.4,
+    "low": 3070.0,
+    "volume": 17810099,
+    "daily_return_pct": 6.33,
+    "reasons": [
+      "Extreme Rally (+6.33%)",
+      "Abnormal Volume Spike (3.6x avg)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-02-13",
+    "close": 3025.3,
+    "open": 3100.0,
+    "high": 3127.0,
+    "low": 3017.9,
+    "volume": 3885000,
+    "daily_return_pct": -3.75,
+    "reasons": [
+      "Severe Drop (-3.75%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2026-02-16",
+    "close": 2804.6,
+    "open": 2810.0,
+    "high": 2835.9,
+    "low": 2726.3,
+    "volume": 12404624,
+    "daily_return_pct": -7.3,
+    "reasons": [
+      "Severe Drop (-7.30%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2026-03-05",
+    "close": 2761.4,
+    "open": 2710.0,
+    "high": 2782.0,
+    "low": 2656.3,
+    "volume": 7464269,
+    "daily_return_pct": 5.12,
+    "reasons": [
+      "Extreme Rally (+5.12%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-03-27",
+    "close": 2779.8,
+    "open": 2856.0,
+    "high": 2878.7,
+    "low": 2770.2,
+    "volume": 3938937,
+    "daily_return_pct": -3.82,
+    "reasons": [
+      "Severe Drop (-3.82%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2026-04-01",
+    "close": 2867.6,
+    "open": 2810.5,
+    "high": 2899.9,
+    "low": 2797.3,
+    "volume": 5166997,
+    "daily_return_pct": 6.86,
+    "reasons": [
+      "Extreme Rally (+6.86%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-04-06",
+    "close": 2982.3,
+    "open": 2851.4,
+    "high": 3000.0,
+    "low": 2818.2,
+    "volume": 5962836,
+    "daily_return_pct": 4.59,
+    "reasons": [
+      "Extreme Rally (+4.59%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-04-08",
+    "close": 3163.6,
+    "open": 3075.0,
+    "high": 3208.6,
+    "low": 3031.8,
+    "volume": 10418736,
+    "daily_return_pct": 7.21,
+    "reasons": [
+      "Extreme Rally (+7.21%)"
+    ],
+    "type": "Surge"
+  },
+  {
+    "date": "2026-05-27",
+    "close": 4248.4,
+    "open": 4437.0,
+    "high": 4446.8,
+    "low": 4236.1,
+    "volume": 4332377,
+    "daily_return_pct": -3.52,
+    "reasons": [
+      "Severe Drop (-3.52%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2026-06-05",
+    "close": 3880.0,
+    "open": 4053.0,
+    "high": 4121.0,
+    "low": 3822.9,
+    "volume": 6658969,
+    "daily_return_pct": -3.8,
+    "reasons": [
+      "Severe Drop (-3.80%)"
+    ],
+    "type": "Crash"
+  },
+  {
+    "date": "2026-06-17",
+    "close": 3999.2,
+    "open": 4180.0,
+    "high": 4219.9,
+    "low": 3961.0,
+    "volume": 6984638,
+    "daily_return_pct": -3.92,
+    "reasons": [
+      "Severe Drop (-3.92%)"
+    ],
+    "type": "Crash"
+  }
+]
